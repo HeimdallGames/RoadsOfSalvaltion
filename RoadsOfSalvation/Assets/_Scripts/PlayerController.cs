@@ -51,13 +51,15 @@ public class PlayerController : MonoBehaviour
         {
             print("Parriba");
             //temporal y no funsiona
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - GetComponent<Collider>().bounds.size.z);
+            if(transform.position.x < 0)
+                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 2.5f);
         }
         else if (Input.GetKeyDown(downKey))
         {
             print("Pabajo");
             //temporal y no funsiona
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + GetComponent<Collider>().bounds.size.z);
+            if (transform.position.x < -5)
+                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 2.5f);
         }
     }
 }

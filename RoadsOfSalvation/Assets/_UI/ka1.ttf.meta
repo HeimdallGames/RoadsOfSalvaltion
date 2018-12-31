@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 527075a7eefb13647a13fc5f1220bd36
+guid: 8c7f1feed9e46b344b205fa54ddf97ec
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: PanicStricken
+  fontName: Karmatic Arcade
   fontNames:
-  - PanicStricken
+  - Karmatic Arcade
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
