@@ -5,18 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float acel = 100.0f; //Aceleracion
-    public float velMin = 300.0f; //Velocidad maxima
-    public float velMax = 600.0f; //Velocidad minima
+    public float acel; //Aceleracion
+    public float velMin; //Velocidad maxima
+    public float velMax; //Velocidad minima
 
-    public string upKey = "w";
-    public string downKey = "s";
+    public string upKey;
+    public string downKey;
 
     private int posHorizontal = 0; // El carril donde se encuentra el vehiculo
     private Rigidbody rb;
-
-    Vector3 movement;
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -27,19 +25,26 @@ public class PlayerController : MonoBehaviour
     {
 
         float moveHorizontal = Input.GetAxis("Horizontal"); // Valor entre 1 y -1.
-
+        Vector3 velocity=Vector3.zero;
 
         //Si la velocidad ya es maxima, ignora el input positivo
         if (moveHorizontal > 0 && rb.velocity.x <= velMax)
         {
-            rb.velocity = new Vector3(velMax, rb.velocity.y, 0.0f);
+            velocity = new Vector3(velMax, rb.velocity.y, 0.0f);
         }
         //Si la velocidad ya es minima, ignora el input negativo. 
         //Ademas, si el objeto no llega a la velocidad minima, se le da (solo ocurre una vez) 
         else if (moveHorizontal < 0 || rb.velocity.x <= velMin)
         {
-            rb.velocity = new Vector3(velMin, rb.velocity.y, 0.0f);
+            velocity = new Vector3(velMin, rb.velocity.y, 0.0f);
         }
+
+        if (transform.position.y >= 5) {
+            velocity = velocity + new Vector3(0, -10, 0);
+        }
+
+        rb.velocity = velocity;
+
 
 
     }
