@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
@@ -14,10 +14,12 @@ public class PlayerController : MonoBehaviour
 
     private int posHorizontal = 0; // El carril donde se encuentra el vehiculo
     private Rigidbody rb;
-    
+    private Text puntos;
+    private int puntuacion; //Almacena la puntuación
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo
     }
 
 
@@ -39,29 +41,46 @@ public class PlayerController : MonoBehaviour
             velocity = new Vector3(velMin, rb.velocity.y, 0.0f);
         }
 
-        if (transform.position.y >= 5) {
-            velocity = velocity + new Vector3(0, -10, 0);
-        }
+        
 
         rb.velocity = velocity;
 
-
+        puntuacion += 1;
 
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(upKey) && posHorizontal < 1)
         {
             print("Parriba");
             posHorizontal += 1;
-            rb.MovePosition(transform.position + (Vector3.forward * 3));
+            rb.AddForce(0, 0, 150,ForceMode.VelocityChange);
+            //rb.MovePosition(transform.position + (Vector3.forward * 3));
         }
         else if (Input.GetKeyDown(downKey) && posHorizontal > -1)
         {
             print("Pabajo");
             posHorizontal -= 1;
-            rb.MovePosition(transform.position + (Vector3.back * 3));
+            rb.AddForce(0, 0, -150, ForceMode.VelocityChange);
+           // rb.MovePosition(transform.position + (Vector3.back * 3));
+        }
 
+        puntos.text = ""+puntuacion;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        switch (other.tag) {
+            case "finish":
+                break;
+            case "puntos":
+                Destroy(other.gameObject);
+                puntuacion += 30;
+                break;
+            default:
+                break;
 
         }
     }
