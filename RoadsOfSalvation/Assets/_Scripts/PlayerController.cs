@@ -13,17 +13,20 @@ public class PlayerController : MonoBehaviour
     public string upKey;
     public string downKey;
 
-    private float InitialPosHorizontal = 0; // El carril donde se encuentra el vehiculo
+    public float InitialPosHorizontal = 0; // El carril donde se encuentra el vehiculo
     private bool goingToCentral = false;
 
     private Rigidbody rb;
     private Text puntos;
     private int puntuacion; //Almacena la puntuación
 
+    private float lastZ;
+    private float lastCarril;
+
 
     void Start()
     {
-        InitialPosHorizontal = transform.position.z;
+        InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
         puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo
     }
@@ -32,6 +35,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
 
+
+        /**************************************************************/
+        /******************** CONTROL DE VELOCIDAD ********************/
+        /**************************************************************/
         float moveHorizontal = Input.GetAxis("Horizontal"); // Valor entre 1 y -1.
         Vector3 velocity = Vector3.zero;
 
@@ -47,6 +54,9 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(velMin, rb.velocity.y, rb.velocity.z);
         }
 
+        /**************************************************************/
+        /* COMPROBACIÓN NO SALE DE CARRETERA Y SE POSICIONA EN CARRIL */
+        /**************************************************************/
         if (goingToCentral && transform.position.z < InitialPosHorizontal + 0.1 && transform.position.z > InitialPosHorizontal - 0.1)
         {
             goingToCentral = false;
@@ -63,8 +73,15 @@ public class PlayerController : MonoBehaviour
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal - 2.5f);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
         }
+        /**************************************************************/
+        /**************************************************************/
+        /**************************************************************/
+        /*
+         * 
+         * Problema de los muros resuelto por ahora haciendo el collider mas grande
+         * 
+         * */
 
-        
         puntuacion += 1;
 
     }
