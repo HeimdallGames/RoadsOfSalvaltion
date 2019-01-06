@@ -3010,6 +3010,11 @@ Prefab:
       propertyPath: m_Size.z
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114375410855982864, guid: 18a9e3cfbde51c540863f140181be2dc,
+        type: 2}
+      propertyPath: acel
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a9e3cfbde51c540863f140181be2dc, type: 2}
   m_IsPrefabAsset: 0

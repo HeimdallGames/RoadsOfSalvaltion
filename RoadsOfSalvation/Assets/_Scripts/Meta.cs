@@ -14,11 +14,11 @@ public class Meta : MonoBehaviour {
                 case "tutorialScene":
                     PlayerPrefs.SetInt("tutorialCompleted", 0);
                     break;
-                case "GodPath_2":
+                case "GodPath_1":
                     if (PlayerPrefs.GetInt("currentGoodLvl", 0) < 2)
                         PlayerPrefs.SetInt("currentGoodLvl", 2);
                     break;
-                case "SatanPath_2":
+                case "SatanPath_1":
                     if (PlayerPrefs.GetInt("currentBadLvl", 0) < 2)
                         PlayerPrefs.SetInt("currentBadLvl", 2);
                     break;

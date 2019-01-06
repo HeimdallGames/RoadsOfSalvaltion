@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 
-    public float acel; //Aceleracion
-    public float velMin; //Velocidad maxima
-    public float velMax; //Velocidad minima
+    public float acel = 50; //Aceleracion
+    public float velMin = 10; //Velocidad maxima
+    public float velMax = 30; //Velocidad minima
     public float velLateral = 15.0f;
 
     public string upKey;
