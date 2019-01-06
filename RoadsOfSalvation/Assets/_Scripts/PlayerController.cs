@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
         puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo

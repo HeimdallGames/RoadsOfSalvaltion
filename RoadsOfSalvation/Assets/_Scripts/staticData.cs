@@ -8,7 +8,7 @@ public static class StaticData
 
     public static bool tutorialCompleted()
     {
-        return PlayerPrefs.GetInt("tutorialCompleted", 0) == 1;
+        return PlayerPrefs.GetInt("tutorialCompleted", 1) == 1;
     }
 
     public static int goodLvl()
