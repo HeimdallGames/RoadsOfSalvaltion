@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 23643764992819812}
   m_Layer: 0
   m_Name: carrito
-  m_TagString: Untagged
+  m_TagString: finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

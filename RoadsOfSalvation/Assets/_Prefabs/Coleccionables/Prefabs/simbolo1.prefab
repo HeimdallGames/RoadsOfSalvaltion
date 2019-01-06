@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4655910924555338}
   - component: {fileID: 64045551503566400}
+  - component: {fileID: 114004570991274850}
   m_Layer: 0
   m_Name: simbolo1
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,14 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!114 &114004570991274850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106254236854962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b28a78dda1469045b36d875a5c57a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

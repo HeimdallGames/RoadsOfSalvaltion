@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/__Scenes/mainMenuScene.unity
     guid: b78941bc415e6ba4a979b4e949daf356
   - enabled: 1
-    path: Assets/__Scenes/gameScene.unity
+    path: Assets/__Scenes/tutorialScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/__Scenes/gameOverScene.unity
+    guid: 818e5cb656539be4e80e3ea9e82bef2b
+  - enabled: 1
+    path: Assets/__Scenes/GodPath_1.unity
+    guid: 330a2c9ae4f8fb54e95aef33e2e6f28c
+  - enabled: 1
+    path: Assets/__Scenes/GodPath_2.unity
+    guid: f7055ef0ce362c94cbbe255c7cc2ec14
+  - enabled: 1
+    path: Assets/__Scenes/SatanPath_1.unity
+    guid: db97699249addd942846792d701dae95
+  - enabled: 1
+    path: Assets/__Scenes/SatanPath_2.unity
+    guid: a353a1a6ecc3b214fb89583135395323
   m_configObjects: {}

@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4195095979018244}
   - component: {fileID: 64965716654937334}
+  - component: {fileID: 114230692287915922}
   m_Layer: 0
   m_Name: pentaculo
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,3 +129,14 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!114 &114230692287915922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332576962787074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b28a78dda1469045b36d875a5c57a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64728622925666952}
   m_Layer: 0
   m_Name: valla
-  m_TagString: Untagged
+  m_TagString: finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

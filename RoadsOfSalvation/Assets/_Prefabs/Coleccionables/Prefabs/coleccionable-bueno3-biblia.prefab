@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4980376428617622}
   - component: {fileID: 64346211226181828}
+  - component: {fileID: 114742475527227116}
   m_Layer: 0
   m_Name: coleccionable-bueno3-biblia
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,3 +133,14 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!114 &114742475527227116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265868868895248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b28a78dda1469045b36d875a5c57a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

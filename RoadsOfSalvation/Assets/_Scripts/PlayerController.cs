@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class PlayerController : MonoBehaviour
 {
 
@@ -108,12 +110,20 @@ public class PlayerController : MonoBehaviour
         puntos.text = "" + puntuacion;
     }
 
+    private void death()
+    {
+        StaticData.punctuation = puntuacion;
+        StaticData.lastScenario = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene("gameOverScene");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
 
         switch (other.tag)
         {
             case "finish":
+                death();
                 break;
             case "puntos":
                 Destroy(other.gameObject);
@@ -123,5 +133,16 @@ public class PlayerController : MonoBehaviour
                 break;
 
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.collider.tag)
+        {
+            case "finish":
+                death();
+                break;
+        }
+            
     }
 }

@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 54309234407516848}
   m_Layer: 0
   m_Name: personaje_malo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,8 +401,10 @@ MonoBehaviour:
   acel: 100
   velMin: 10
   velMax: 30
+  velLateral: 15
   upKey: w
   downKey: s
+  InitialPosHorizontal: 0
 --- !u!135 &135967652479631002
 SphereCollider:
   m_ObjectHideFlags: 1

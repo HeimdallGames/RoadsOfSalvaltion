@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 54635302953004686}
   m_Layer: 0
   m_Name: personaje_bueno
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,8 +420,10 @@ MonoBehaviour:
   acel: 100
   velMin: 10
   velMax: 30
+  velLateral: 15
   upKey: w
   downKey: s
+  InitialPosHorizontal: 0
 --- !u!114 &114881874072169866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,8 +438,10 @@ MonoBehaviour:
   acel: 100
   velMin: 10
   velMax: 30
+  velLateral: 15
   upKey: w
   downKey: s
+  InitialPosHorizontal: 0
 --- !u!135 &135326258866318440
 SphereCollider:
   m_ObjectHideFlags: 1
