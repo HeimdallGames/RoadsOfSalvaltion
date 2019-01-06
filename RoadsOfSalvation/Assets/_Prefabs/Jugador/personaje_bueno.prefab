@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: 136930266783058970}
   - component: {fileID: 114785064817691200}
   - component: {fileID: 54635302953004686}
-  - component: {fileID: 114710284030974790}
   m_Layer: 0
   m_Name: personaje_bueno
   m_TagString: Player
@@ -407,24 +406,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.016573317, y: 0.015964651, z: 0.018494373}
   m_Center: {x: -0.007962764, y: 0.0038382194, z: -0.008654338}
---- !u!114 &114710284030974790
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725411241699514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da438b18e0133194da95b78dc2db95ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acel: 0
-  velMin: 0
-  velMax: 0
-  velLateral: 15
-  upKey: w
-  downKey: s
-  InitialPosHorizontal: 0
 --- !u!114 &114785064817691200
 MonoBehaviour:
   m_ObjectHideFlags: 1
