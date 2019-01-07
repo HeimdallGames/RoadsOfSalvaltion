@@ -5441,7 +5441,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 766754013}
   m_HandleRect: {fileID: 1913964260}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -60
   m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
@@ -8228,7 +8228,7 @@ MonoBehaviour:
   sounds:
   - name: MenuTheme
     clip: {fileID: 8300000, guid: d097dc2a2f4f82f41b3beff9ba95184a, type: 3}
-    volume: 1
+    volume: 0.7
     volumeVariance: 1
     pitch: 1
     pitchVariance: 0
@@ -8237,7 +8237,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GoodTheme
     clip: {fileID: 8300000, guid: c00805c87c732304a998320e58b6131a, type: 3}
-    volume: 1
+    volume: 0.7
     volumeVariance: 1
     pitch: 1
     pitchVariance: 0
@@ -8246,7 +8246,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: BadTheme
     clip: {fileID: 8300000, guid: 1760af1923b9f214091b2c4b711b6bc2, type: 3}
-    volume: 1
+    volume: 0.7
     volumeVariance: 1
     pitch: 1
     pitchVariance: 0
@@ -8299,7 +8299,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
     source: {fileID: 0}
   - name: DeslizamientoLateral2
-    clip: {fileID: 8300000, guid: 37cd84194dcdb8148a939639efecab9d, type: 3}
+    clip: {fileID: 8300000, guid: 212461dfdc974b944b21198028192140, type: 3}
     volume: 0.5
     volumeVariance: 1
     pitch: 1
@@ -8335,7 +8335,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
     source: {fileID: 0}
   - name: StartRacing
-    clip: {fileID: 8300000, guid: 48ca3c94dcfda404db960b33a1b48375, type: 3}
+    clip: {fileID: 8300000, guid: e7cabab9dc521d6438e3189e44505f40, type: 3}
     volume: 1
     volumeVariance: 1
     pitch: 1
@@ -8382,6 +8382,24 @@ MonoBehaviour:
   - name: Atropello3
     clip: {fileID: 8300000, guid: 66640386e0e31b442a3c72e7f3c93ac7, type: 3}
     volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: GoodTheme2
+    clip: {fileID: 8300000, guid: ca7937e74967684429631c7f26759fad, type: 3}
+    volume: 0.7
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: BadTheme2
+    clip: {fileID: 8300000, guid: 7047100da2fddd241b5e68ada44b895d, type: 3}
+    volume: 0.7
     volumeVariance: 1
     pitch: 1
     pitchVariance: 0

@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour
     {
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().buildIndex;
+        AudioManager.StopAllAudio();
         SceneManager.LoadScene("gameOverScene");
     }
 
