@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        AudioManager.instance.Play("MotorVehicle");
         //PlayerPrefs.DeleteAll();
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
@@ -93,6 +94,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(upKey))
         {
+            AudioManager.instance.Play("DeslizamientoLateral1");
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
@@ -101,6 +103,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(downKey))
         {
+            AudioManager.instance.Play("DeslizamientoLateral2");
             if (transform.position.z > InitialPosHorizontal)
             {
                 goingToCentral = true;
@@ -116,6 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().name;
+        AudioManager.StopAllAudio();
         SceneManager.LoadScene("gameOverScene");
     }
 
@@ -138,6 +142,7 @@ public class PlayerController : MonoBehaviour
             case "puntos":
                 Destroy(other.gameObject);
                 puntuacion += 30;
+                AudioManager.instance.Play("Coleccionable");
                 break;
             case "goal":
                 nextLevel();

@@ -12,9 +12,12 @@ public class MainMenuFun : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        AudioManager.instance.Play("MenuTheme");
         if (StaticData.tutorialCompleted())
         {
-            startButton.onClick.AddListener(delegate { SceneManager.LoadScene("tutorialScene"); });
+            startButton.onClick.AddListener(delegate {
+                AudioManager.StopAllAudio();
+                SceneManager.LoadScene("tutorialScene"); });
         }
         else
         {

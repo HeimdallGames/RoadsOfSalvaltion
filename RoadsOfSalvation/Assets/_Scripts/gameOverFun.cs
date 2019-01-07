@@ -16,6 +16,7 @@ public class gameOverFun : MonoBehaviour {
 
         //if superior a record (memoria persistente)
         //newRecordMessage.gameObject.SetActive(true);
+        //AudioManager.instance.Play("newRecord");
 
         retry.onClick.AddListener(delegate { playAgain(); });
 
