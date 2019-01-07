@@ -114,14 +114,23 @@ public class PlayerController : MonoBehaviour
         puntos.text = "" + puntuacion;
     }
 
+    //Cuando el personaje muere
     private void death()
     {
         StaticData.punctuation = puntuacion;
-        StaticData.lastScenario = SceneManager.GetActiveScene().buildIndex;
+        StaticData.lastScenario = SceneManager.GetActiveScene().name;
         AudioManager.StopAllAudio();
         SceneManager.LoadScene("gameOverScene");
     }
 
+    private void nextLevel()
+    {
+        if (SceneManager.GetActiveScene().name.Equals("tutorialScene")) { 
+             StaticData.punctuation = puntuacion;
+             StaticData.lastScenario = SceneManager.GetActiveScene().name;
+             SceneManager.LoadScene("nextLevel");
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
 
@@ -135,12 +144,15 @@ public class PlayerController : MonoBehaviour
                 puntuacion += 30;
                 AudioManager.instance.Play("Coleccionable");
                 break;
+            case "goal":
+                nextLevel();
+                break;
             default:
                 break;
 
         }
     }
-
+    
     void OnCollisionEnter(Collision collision)
     {
         switch (collision.collider.tag)
