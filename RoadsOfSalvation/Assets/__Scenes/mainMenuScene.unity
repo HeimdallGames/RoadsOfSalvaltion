@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8281,7 +8281,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
     source: {fileID: 0}
   - name: MotorVehicle
-    clip: {fileID: 8300000, guid: c0dcb222e7f16df43a01183aa57a40c4, type: 3}
+    clip: {fileID: 8300000, guid: ad7e7c51da4667f4bb7375ff3eb11dab, type: 3}
     volume: 0.5
     volumeVariance: 1
     pitch: 1
@@ -8290,7 +8290,7 @@ MonoBehaviour:
     mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
     source: {fileID: 0}
   - name: DeslizamientoLateral1
-    clip: {fileID: 8300000, guid: aaa74c5487a5de7418446b47e8a36672, type: 3}
+    clip: {fileID: 8300000, guid: 212461dfdc974b944b21198028192140, type: 3}
     volume: 0.5
     volumeVariance: 1
     pitch: 1
