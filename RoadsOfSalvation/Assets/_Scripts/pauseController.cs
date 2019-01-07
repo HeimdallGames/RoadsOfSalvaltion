@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class pauseController : MonoBehaviour {
     GameObject[] pauseItems;
     Button playB;
@@ -30,17 +30,16 @@ public class pauseController : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKey(KeyCode.Escape)) {
             if (Time.timeScale == 1)
             {
-                Time.timeScale = 0;
                 show();
             }
             else if (Time.timeScale == 0) {
-                Time.timeScale = 1;
                 hide();
             }
         }
 	}
     //Muestra el menu de pausa
     public void show() {
+        Time.timeScale = 0;
         foreach (GameObject g in pauseItems)
         {
             g.SetActive(true);
@@ -48,6 +47,7 @@ public class pauseController : MonoBehaviour {
     }
     //Oculta el menu de pausa
     public void hide() {
+        Time.timeScale = 1;
         foreach (GameObject g in pauseItems) {
             g.SetActive(false);
         }
@@ -55,10 +55,10 @@ public class pauseController : MonoBehaviour {
     //Reinicia el nivel actual
     public void reset()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     //Vuelve al menu principal
     public void exit() {
-
+        SceneManager.LoadScene("mainMenuScene");
     }
 }

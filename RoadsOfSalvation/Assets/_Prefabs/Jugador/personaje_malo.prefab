@@ -83,7 +83,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4365078571464334}
-  - component: {fileID: 65576712445652516}
   m_Layer: 0
   m_Name: personaje-malo
   m_TagString: Untagged
@@ -103,7 +102,6 @@ GameObject:
   - component: {fileID: 23057623295424844}
   - component: {fileID: 65334049933987914}
   - component: {fileID: 135967652479631002}
-  - component: {fileID: 136733052401431278}
   - component: {fileID: 114180574385885268}
   - component: {fileID: 54309234407516848}
   - component: {fileID: 114738545212375378}
@@ -150,7 +148,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1959178653780396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -142.07, y: -0.333, z: -4.53}
+  m_LocalPosition: {x: -147.39612, y: -1.7073894, z: -1.6873951}
   m_LocalScale: {x: 1.6946, y: 1.2304688, z: 1.1106588}
   m_Children:
   - {fileID: 4365078571464334}
@@ -376,18 +374,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0060091, y: 0.86592865, z: 1}
   m_Center: {x: 0.0030044843, y: 0.06703569, z: 0}
---- !u!65 &65576712445652516
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1773661514647346}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.016573317, y: 0.015964651, z: 0.018494373}
-  m_Center: {x: -0.007962764, y: 0.0038382194, z: -0.008654338}
 --- !u!114 &114180574385885268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -436,16 +422,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.08
   m_Center: {x: 0.44, y: -0.48, z: 0}
---- !u!136 &136733052401431278
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1959178653780396}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.7
-  m_Height: 1.45
-  m_Direction: 0
-  m_Center: {x: -0.19, y: 0, z: -0.01}
