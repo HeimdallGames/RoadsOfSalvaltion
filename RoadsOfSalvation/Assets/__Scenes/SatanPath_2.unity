@@ -846,11 +846,6 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 23041657507394334, guid: f1ffb3696ed929d4eb986102fec3c44a,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 047d7bddd692cbd4993830f56d9df405, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1ffb3696ed929d4eb986102fec3c44a, type: 2}
   m_IsPrefabAsset: 0
@@ -1564,11 +1559,6 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 23041657507394334, guid: f1ffb3696ed929d4eb986102fec3c44a,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 047d7bddd692cbd4993830f56d9df405, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1ffb3696ed929d4eb986102fec3c44a, type: 2}
   m_IsPrefabAsset: 0
@@ -2233,11 +2223,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 23978605840066180, guid: 205819b584ca9864da74d56de413cf02,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 047d7bddd692cbd4993830f56d9df405, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205819b584ca9864da74d56de413cf02, type: 2}
   m_IsPrefabAsset: 0
@@ -3648,11 +3633,6 @@ Prefab:
       propertyPath: m_Name
       value: rampa4 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 23978605840066180, guid: 205819b584ca9864da74d56de413cf02,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 047d7bddd692cbd4993830f56d9df405, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 205819b584ca9864da74d56de413cf02, type: 2}
   m_IsPrefabAsset: 0
