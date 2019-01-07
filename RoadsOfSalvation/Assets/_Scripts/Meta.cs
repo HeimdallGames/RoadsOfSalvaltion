@@ -8,6 +8,7 @@ public class Meta : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        AudioManager.StopAllAudio();
         AudioManager.instance.Play("VictoryTheme");
         if (other.tag == "Player") { 
             switch (SceneManager.GetActiveScene().name)
