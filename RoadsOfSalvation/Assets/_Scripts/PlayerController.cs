@@ -15,12 +15,16 @@ public class PlayerController : MonoBehaviour
     public string upKey;
     public string downKey;
 
-    private float InitialPosHorizontal = 0; // El carril donde se encuentra el vehiculo
+	public GameObject meta;
+
+    public float InitialPosHorizontal = 0; // El carril donde se encuentra el vehiculo
     private bool goingToCentral = false;
 
     private Rigidbody rb;
     private Text puntos;
     private int puntuacion; //Almacena la puntuación
+	private float posicionInicial;
+	private float posicionFinal;
 
     private float lastZ;
     private float lastCarril;
@@ -33,6 +37,8 @@ public class PlayerController : MonoBehaviour
         //PlayerPrefs.DeleteAll();
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
+		posicionInicial = transform.position.x;
+		posicionFinal = meta.transform.position.x;
         puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo
         
     }
@@ -91,9 +97,8 @@ public class PlayerController : MonoBehaviour
          * Problema de los muros resuelto por ahora haciendo el collider mas grande
          * 
          * */
-
-        puntuacion += 1;
-
+		float avanzado = ((transform.position.x - posicionInicial )/posicionFinal)*8000;
+		puntuacion = Mathf.CeilToInt (avanzado);
     }
 
     private void Update()
@@ -146,6 +151,20 @@ public class PlayerController : MonoBehaviour
     //Cuando el personaje muere
     private void death()
     {
+		//
+		if (transform.position.x == posicionFinal)
+		{
+			int bonus = 500;
+			if (Time.time < 100) {
+				bonus = 2000;
+			} else if (Time.time < 130) {
+				bonus = 1500;
+			} else if (Time.time < 160) {
+				bonus = 1000;
+			}
+			puntuacion += bonus;
+		}
+		//
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().name;
         AudioManager.StopAllAudio();
