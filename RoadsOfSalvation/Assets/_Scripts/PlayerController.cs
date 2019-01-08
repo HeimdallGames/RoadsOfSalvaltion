@@ -70,17 +70,20 @@ public class PlayerController : MonoBehaviour
         /**************************************************************/
         /* COMPROBACIÓN NO SALE DE CARRETERA Y SE POSICIONA EN CARRIL */
         /**************************************************************/
+        //Arriba a medio
         if (goingToCentral && transform.position.z < InitialPosHorizontal + 0.1 && transform.position.z > InitialPosHorizontal - 0.1)
         {
             goingToCentral = false;
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
         }
+        //Medio arriba
         else if (transform.position.z > InitialPosHorizontal + 2.5f)
         {
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal + 2.5f);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
         }
+        //Medio abajo
         else if (transform.position.z < InitialPosHorizontal - 2.5f)
         {
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal - 2.5f);
@@ -102,7 +105,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(upKey))
         {
-           // AudioManager.instance.Play("DeslizamientoLateral1");
+            // AudioManager.instance.Play("DeslizamientoLateral1");
+            
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
@@ -114,6 +118,7 @@ public class PlayerController : MonoBehaviour
          //   AudioManager.instance.Play("DeslizamientoLateral2");
             if (transform.position.z > InitialPosHorizontal)
             {
+                Debug.Log("arriba");
                 goingToCentral = true;
             }
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
