@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
 
-    public float acel = 50; //Aceleracion
+    //public float acel = 50; //Aceleracion //No se usa?
     public float velMin = 10; //Velocidad maxima
     public float velMax = 30; //Velocidad minima
     public float velLateral = 15.0f;
@@ -24,18 +24,19 @@ public class PlayerController : MonoBehaviour
 
     private float lastZ;
     private float lastCarril;
-
-
+    
+    private bool isAcel=false;
+    private bool isFren=false;
     void Start()
     {
-        AudioManager.instance.Play("MotorVehicle");
+        //AudioManager.instance.Play("MotorVehicle");
         //PlayerPrefs.DeleteAll();
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
         puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo
+        
     }
-
-
+    
     void FixedUpdate()
     {
 
@@ -44,16 +45,18 @@ public class PlayerController : MonoBehaviour
         /******************** CONTROL DE VELOCIDAD ********************/
         /**************************************************************/
         float moveHorizontal = Input.GetAxis("Horizontal"); // Valor entre 1 y -1.
+        isAcel = StaticData.isAcel;
+        isFren = StaticData.isFren;
         Vector3 velocity = Vector3.zero;
 
         //Si la velocidad ya es maxima, ignora el input positivo
-        if (moveHorizontal > 0 && rb.velocity.x <= velMax)
+        if ((moveHorizontal > 0 && rb.velocity.x <= velMax) || isAcel)
         {
             rb.velocity = new Vector3(velMax, rb.velocity.y, rb.velocity.z);
         }
         //Si la velocidad ya es minima, ignora el input negativo. 
         //Ademas, si el objeto no llega a la velocidad minima, se le da (solo ocurre una vez) 
-        else if (moveHorizontal < 0 || rb.velocity.x <= velMin)
+        else if ((moveHorizontal < 0 || rb.velocity.x <= velMin) || isFren)
         {
             rb.velocity = new Vector3(velMin, rb.velocity.y, rb.velocity.z);
         }
@@ -94,7 +97,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(upKey))
         {
-            AudioManager.instance.Play("DeslizamientoLateral1");
+           // AudioManager.instance.Play("DeslizamientoLateral1");
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
@@ -103,7 +106,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(downKey))
         {
-            AudioManager.instance.Play("DeslizamientoLateral2");
+         //   AudioManager.instance.Play("DeslizamientoLateral2");
             if (transform.position.z > InitialPosHorizontal)
             {
                 goingToCentral = true;
@@ -111,6 +114,27 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
         }
 
+        //Necesario para el control táctil
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved){
+            Vector2 desplazamiento = Input.GetTouch(0).deltaPosition;
+            if (desplazamiento.y > 1)
+            {
+                AudioManager.instance.Play("DeslizamientoLateral1");
+                if (transform.position.z < InitialPosHorizontal)
+                {
+                    goingToCentral = true;
+                }
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, velLateral);
+            }
+            else if (desplazamiento.y < 1) {
+                AudioManager.instance.Play("DeslizamientoLateral2");
+                if (transform.position.z > InitialPosHorizontal)
+                {
+                    goingToCentral = true;
+                }
+                rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
+            }
+        }
         puntos.text = "" + puntuacion;
     }
 
