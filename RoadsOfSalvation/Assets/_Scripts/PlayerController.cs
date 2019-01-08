@@ -71,20 +71,21 @@ public class PlayerController : MonoBehaviour
         /* COMPROBACIÓN NO SALE DE CARRETERA Y SE POSICIONA EN CARRIL */
         /**************************************************************/
         //Arriba a medio
-        if (goingToCentral && transform.position.z < InitialPosHorizontal + 0.1 && transform.position.z > InitialPosHorizontal - 0.1)
+        
+        if (goingToCentral && transform.position.z < InitialPosHorizontal + 0.2 && transform.position.z > InitialPosHorizontal - 0.2)
         {
             goingToCentral = false;
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
         }
         //Medio arriba
-        else if (transform.position.z > InitialPosHorizontal + 2.5f)
+        else if (transform.position.z > InitialPosHorizontal + 2.6f)
         {
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal + 2.5f);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
         }
         //Medio abajo
-        else if (transform.position.z < InitialPosHorizontal - 2.5f)
+        else if (transform.position.z < InitialPosHorizontal - 2.6f)
         {
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal - 2.5f);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
@@ -99,6 +100,7 @@ public class PlayerController : MonoBehaviour
          * */
 		float avanzado = ((transform.position.x - posicionInicial )/posicionFinal)*8000;
 		puntuacion = Mathf.CeilToInt (avanzado);
+        Debug.Log("Se toca la velocidad: " + rb.velocity.z);
     }
 
     private void Update()
@@ -106,22 +108,25 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(upKey))
         {
             // AudioManager.instance.Play("DeslizamientoLateral1");
-            
+
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
             }
+            //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, velLateral);
+           // Debug.Log("Velocidad modificada: " + rb.velocity.z);
         }
         else if (Input.GetKeyDown(downKey))
         {
-         //   AudioManager.instance.Play("DeslizamientoLateral2");
+            //   AudioManager.instance.Play("DeslizamientoLateral2");
             if (transform.position.z > InitialPosHorizontal)
             {
-                Debug.Log("arriba");
                 goingToCentral = true;
             }
+            //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
+            //Debug.Log("Velocidad modificada: " + rb.velocity.z);
         }
 
         //Necesario para el control táctil
