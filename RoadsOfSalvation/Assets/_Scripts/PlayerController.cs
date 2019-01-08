@@ -146,20 +146,6 @@ public class PlayerController : MonoBehaviour
     //Cuando el personaje muere
     private void death()
     {
-		//
-		if (transform.position.x == posicionFinal)
-		{
-			int bonus = 500;
-			if (Time.time < 100) {
-				bonus = 2000;
-			} else if (Time.time < 130) {
-				bonus = 1500;
-			} else if (Time.time < 160) {
-				bonus = 1000;
-			}
-			puntuacion += bonus;
-		}
-		//
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().name;
         AudioManager.StopAllAudio();
@@ -188,6 +174,18 @@ public class PlayerController : MonoBehaviour
                 AudioManager.instance.Play("Coleccionable");
                 break;
             case "goal":
+				if (transform.position.x == posicionFinal)
+				{
+					int bonus = 500;
+					if (Time.time < 100) {
+						bonus = 2000;
+					} else if (Time.time < 130) {
+						bonus = 1500;
+					} else if (Time.time < 160) {
+						bonus = 1000;
+					}
+					puntuacion += bonus;
+				}
                 nextLevel();
                 break;
             default:
