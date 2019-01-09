@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 23388547922641126}
   m_Layer: 0
   m_Name: Mesh1
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
