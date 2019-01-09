@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private int puntuacion; //Almacena la puntuación
 	private float posicionInicial;
 	private float posicionFinal;
+	private float distTotal;
 
     private float lastZ;
     private float lastCarril;
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 		posicionInicial = transform.position.x;
 		posicionFinal = meta.transform.position.x;
+		distTotal = Mathf.Abs (posicionFinal - posicionInicial);
         puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo
         
     }
@@ -98,7 +100,7 @@ public class PlayerController : MonoBehaviour
          * Problema de los muros resuelto por ahora haciendo el collider mas grande
          * 
          * */
-		float avanzado = ((transform.position.x - posicionInicial )/posicionFinal)*8000;
+		float avanzado = Mathf.Abs(((transform.position.x - posicionInicial )/distTotal))*8000;
 		puntuacion = Mathf.CeilToInt (avanzado);
         //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
     }
