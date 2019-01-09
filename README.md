@@ -1,3 +1,4 @@
+# Roads of Salvation - GDD
 ## Introducción
 
 Este  es  el  documento  de  diseño  del  videojuego “*Roads  Of  Salvation*”, diseñado  para  navegadores  web  en  dispositivos  móviles,  ordenadores  y tablets.  El  juego  se  desarrollará  con  *Unity*,  usando  herramientas  externas como *Blender*, *SketchUp* y *3Ds Max*. En este documento se detallarán todos los conceptos clave relacionados con el juego, como las mecánicas, el arte, los personajes, los escenarios y toda la jugabilidad
