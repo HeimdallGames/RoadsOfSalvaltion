@@ -5613,11 +5613,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 64045551503566400, guid: 157870c451a430f40a7aac566e09519b,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 157870c451a430f40a7aac566e09519b, type: 2}
   m_IsPrefabAsset: 0

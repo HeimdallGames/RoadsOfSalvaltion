@@ -7728,15 +7728,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4980376428617622, guid: 9a4cdcf9ac8dc1248809c39d9ec48232, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 112.599915
+      value: 120.14
       objectReference: {fileID: 0}
     - target: {fileID: 4980376428617622, guid: 9a4cdcf9ac8dc1248809c39d9ec48232, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.6299753
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 4980376428617622, guid: 9a4cdcf9ac8dc1248809c39d9ec48232, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.987488
+      value: 5.05
       objectReference: {fileID: 0}
     - target: {fileID: 4980376428617622, guid: 9a4cdcf9ac8dc1248809c39d9ec48232, type: 2}
       propertyPath: m_LocalRotation.x
