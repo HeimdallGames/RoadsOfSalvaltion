@@ -1013,6 +1013,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8,
     type: 2}
   m_PrefabInternal: {fileID: 285133487}
+--- !u!1001 &296651312
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1050136799}
+    m_Modifications:
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.375446
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.5000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.59010977
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.8126984
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394202481827366, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.9003666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424113573528100, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7f00f99ba20a42459bc2467ca5799ba, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &299557811
 Prefab:
   m_ObjectHideFlags: 0
@@ -2457,6 +2515,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4765713108501068, guid: f1ffb3696ed929d4eb986102fec3c44a,
     type: 2}
   m_PrefabInternal: {fileID: 649693427}
+--- !u!1 &659326995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1424113573528100, guid: a7f00f99ba20a42459bc2467ca5799ba,
+    type: 2}
+  m_PrefabInternal: {fileID: 296651312}
+--- !u!114 &659326996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659326995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c3947b09fc1424f8a56329fe10f1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectoLanzado: {fileID: 1886148123497376, guid: 61bb824ca6ee24e4eba874a6ea4e3d5d,
+    type: 2}
+  frecuenciaLanzamiento: 1
+  inicioLanzamientos: 3
 --- !u!1 &684846318
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,6 +3441,11 @@ Prefab:
 --- !u!1 &1050136791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1959178653780396, guid: 989c8fef65814554490f855280aaa453,
+    type: 2}
+  m_PrefabInternal: {fileID: 1050136790}
+--- !u!4 &1050136799 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4420047473434948, guid: 989c8fef65814554490f855280aaa453,
     type: 2}
   m_PrefabInternal: {fileID: 1050136790}
 --- !u!1 &1140108186
