@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -441,8 +441,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -261.10025}
-  m_SizeDelta: {x: 340, y: 63.25409}
+  m_AnchoredPosition: {x: 374.82355, y: -407.2157}
+  m_SizeDelta: {x: 609.6471, y: 121.56863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58393358
 MonoBehaviour:
@@ -609,8 +609,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1027535273}
   m_HandleRect: {fileID: 1027535271}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.22636402
+  m_Value: 0.9999999
+  m_Size: 0.29657322
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -686,7 +686,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 421.1, y: -153.35}
+  m_AnchoredPosition: {x: 696, y: -242}
   m_SizeDelta: {x: 22.3, y: 132.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &97701578
@@ -864,7 +864,7 @@ RectTransform:
   m_Father: {fileID: 473578224}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7736359}
+  m_AnchorMin: {x: 0, y: 0.723298}
   m_AnchorMax: {x: 1, y: 0.99999994}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -938,7 +938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 421.1, y: -153.35}
+  m_AnchoredPosition: {x: 729, y: -205}
   m_SizeDelta: {x: 22.3, y: 132.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106099389
@@ -979,8 +979,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 100561699}
   m_HandleRect: {fileID: 100561698}
   m_Direction: 2
-  m_Value: 0.99999994
-  m_Size: 0.226364
+  m_Value: 1
+  m_Size: 0.27670196
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1571,8 +1571,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -153.34616}
-  m_SizeDelta: {x: 340, y: 132.25409}
+  m_AnchoredPosition: {x: 384, y: -214.40714}
+  m_SizeDelta: {x: 628, y: 172.91528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258750608
 MonoBehaviour:
@@ -1950,8 +1950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -261.10025}
-  m_SizeDelta: {x: 340, y: 63.25409}
+  m_AnchoredPosition: {x: 384, y: -362.82242}
+  m_SizeDelta: {x: 628, y: 103.91528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459051413
 MonoBehaviour:
@@ -2848,35 +2848,21 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus quam,
-    lacinia eget elit id, posuere porttitor quam. Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem
-    ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia
-    eget elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.
+  m_Text: "Este videojuego ha sido dise\xF1ado por Heimdall Games (https://heimdallgames.github.io/hello-world/),
+    un grupo de alumnos de la Universidad Rey Juan Carlos como parte de la asignatura
+    de Juegos para web y redes sociales del grado de dise\xF1o y desarrolo de videojuegos.\r\n<size=35>Equipo:</size>\r\n<b>Iago
+    Calvo Lista</b>: Arte 2D/Modelador 3D.\r\n<b>Iago Cruz Garcia</b>: Desarollador.\r\n<b>Angel
+    Cabanilles Gomar</b>: Desarollador.\r\n<b>Javier Martinez Pablo</b>: Game Designer/Desarollador.\r\n<b>German
+    Matilla Jimenez</b>: Modelado 3D/Desarollador.\r\n"
 --- !u!222 &661897525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4090,7 +4076,7 @@ RectTransform:
   m_Father: {fileID: 1711734026}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7736359}
+  m_AnchorMin: {x: 0, y: 0.7034267}
   m_AnchorMax: {x: 1, y: 0.99999994}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -4344,8 +4330,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -43.609562}
-  m_SizeDelta: {x: 340, y: 67.219124}
+  m_AnchoredPosition: {x: 384, y: -63.974747}
+  m_SizeDelta: {x: 628, y: 107.94949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1112311504
 MonoBehaviour:
@@ -5840,8 +5826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -43.609562}
-  m_SizeDelta: {x: 340, y: 67.219124}
+  m_AnchoredPosition: {x: 374.82355, y: -72.93137}
+  m_SizeDelta: {x: 609.6471, y: 125.86275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579860360
 MonoBehaviour:
@@ -7050,8 +7036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 240, y: -153.34616}
-  m_SizeDelta: {x: 340, y: 132.25409}
+  m_AnchoredPosition: {x: 374.82355, y: -241.14706}
+  m_SizeDelta: {x: 609.6471, y: 190.56863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812382076
 MonoBehaviour:
@@ -7816,7 +7802,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
@@ -7825,26 +7811,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus quam,
-    lacinia eget elit id, posuere porttitor quam. Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem
-    ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia
-    eget elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Integer lacus quam, lacinia eget elit id, posuere porttitor quam.Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Integer lacus quam, lacinia eget
-    elit id, posuere porttitor quam.
+  m_Text: '1. AAA - 9900
+
+    2. AAA - 9000
+
+    3. AAA - 8000
+
+    4. AAA - 7000
+
+    5. AAA - 6000
+
+    6. AAA - 5000
+
+    7. AAA - 4000
+
+    8. AAA - 3000
+
+    9. AAA - 2000
+
+'
 --- !u!222 &2046634990
 CanvasRenderer:
   m_ObjectHideFlags: 0
