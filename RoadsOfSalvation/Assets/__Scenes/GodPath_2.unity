@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -153,7 +153,7 @@ Transform:
   - {fileID: 1036237557}
   - {fileID: 1082470312}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &19596499
 Prefab:
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 95059468}
   m_Layer: 0
   m_Name: viejaEsquivada (5)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -837,7 +837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102596218
 GameObject:
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 104488532}
   m_Layer: 0
   m_Name: viejaEsquivada (2)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,7 +1029,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4816920951868590, guid: 17064c6937aacf34aa0cb2070c92b1b3, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4816920951868590, guid: 17064c6937aacf34aa0cb2070c92b1b3, type: 2}
       propertyPath: m_LocalScale.x
@@ -1307,7 +1307,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4695219571493450, guid: b056e2de9273a5b43934be48ccfed2e5, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4695219571493450, guid: b056e2de9273a5b43934be48ccfed2e5, type: 2}
       propertyPath: m_LocalScale.x
@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 163515015}
   m_Layer: 0
   m_Name: viejaEsquivada (4)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1439,7 +1439,7 @@ GameObject:
   - component: {fileID: 221839943}
   m_Layer: 0
   m_Name: viejaEsquivada (6)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1614,7 +1614,7 @@ Transform:
   - {fileID: 1833363257}
   - {fileID: 634451426}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &255509023
 Prefab:
@@ -1802,7 +1802,7 @@ GameObject:
   - component: {fileID: 306105045}
   m_Layer: 0
   m_Name: viejaEsquivada (3)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 472065456}
   m_Layer: 0
   m_Name: viejaEsquivada (1)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2977,7 +2977,7 @@ GameObject:
   - component: {fileID: 576576468}
   m_Layer: 0
   m_Name: viejaEsquivada (3)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3570,7 +3570,7 @@ RectTransform:
   - {fileID: 92020183}
   - {fileID: 1906700090}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3821,7 +3821,7 @@ GameObject:
   - component: {fileID: 767810287}
   m_Layer: 0
   m_Name: viejaEsquivada (3)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4032,7 +4032,7 @@ GameObject:
   - component: {fileID: 777033195}
   m_Layer: 0
   m_Name: viejaEsquivada (6)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4430,7 +4430,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4666516680844062, guid: 205819b584ca9864da74d56de413cf02, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4666516680844062, guid: 205819b584ca9864da74d56de413cf02, type: 2}
       propertyPath: m_LocalScale.x
@@ -4691,7 +4691,7 @@ GameObject:
   - component: {fileID: 899545292}
   m_Layer: 0
   m_Name: viejaEsquivada (3)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4707,7 +4707,7 @@ Transform:
   m_LocalScale: {x: 0.0060001365, y: 0.080000386, z: 0.033333506}
   m_Children: []
   m_Father: {fileID: 288887719}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &899545292
 BoxCollider:
@@ -4732,7 +4732,7 @@ GameObject:
   - component: {fileID: 905822478}
   m_Layer: 0
   m_Name: viejaEsquivada (7)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4915,7 +4915,7 @@ GameObject:
   - component: {fileID: 940804619}
   m_Layer: 0
   m_Name: viejaEsquivada (4)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5332,7 +5332,7 @@ GameObject:
   - component: {fileID: 1036222406}
   m_Layer: 0
   m_Name: viejaEsquivada (4)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5607,7 +5607,7 @@ GameObject:
   - component: {fileID: 1078048393}
   m_Layer: 0
   m_Name: viejaEsquivada1_2
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5927,7 +5927,7 @@ GameObject:
   - component: {fileID: 1176690186}
   m_Layer: 0
   m_Name: viejaEsquivada (2)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6259,7 +6259,7 @@ GameObject:
   - component: {fileID: 1254634121}
   m_Layer: 0
   m_Name: viejaEsquivada
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6520,7 +6520,7 @@ GameObject:
   - component: {fileID: 1397164063}
   m_Layer: 0
   m_Name: viejaEsquivada (2)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7391,7 +7391,7 @@ RectTransform:
   - {fileID: 102596219}
   - {fileID: 492068397}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7409,7 +7409,7 @@ GameObject:
   - component: {fileID: 1530226632}
   m_Layer: 0
   m_Name: viejaEsquivada (5)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7672,6 +7672,89 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4541597417251846, guid: 9b8551c985b629f48b945c1590c83dbc,
     type: 2}
   m_PrefabInternal: {fileID: 800848749}
+--- !u!1001 &1611454518
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 442.46396
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.6601505
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -11.048796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807127694985076, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1615504326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615504327}
+  - component: {fileID: 1615504328}
+  m_Layer: 0
+  m_Name: viejaEsquivada (4)
+  m_TagString: puntos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1615504327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615504326}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.006587, y: -0.000060000064, z: 0.01749999}
+  m_LocalScale: {x: 0.006000142, y: 0.08000044, z: 0.03333354}
+  m_Children: []
+  m_Father: {fileID: 288887719}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1615504328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615504326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08048478, y: 0.30786988, z: 1.3354926}
+  m_Center: {x: 0.027208447, y: 0.0055621876, z: 0.41774577}
 --- !u!1001 &1619450452
 Prefab:
   m_ObjectHideFlags: 0
@@ -8343,7 +8426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1840530942
 Prefab:
@@ -8561,7 +8644,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4816920951868590, guid: 17064c6937aacf34aa0cb2070c92b1b3, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1136648109880258, guid: 17064c6937aacf34aa0cb2070c92b1b3, type: 2}
       propertyPath: m_Name
@@ -8987,7 +9070,7 @@ GameObject:
   - component: {fileID: 2068646948}
   m_Layer: 0
   m_Name: viejaEsquivada
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9086,7 +9169,7 @@ GameObject:
   - component: {fileID: 2100174397}
   m_Layer: 0
   m_Name: viejaEsquivada (4)
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9216,7 +9299,7 @@ GameObject:
   - component: {fileID: 2118535187}
   m_Layer: 0
   m_Name: viejaEsquivada
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
