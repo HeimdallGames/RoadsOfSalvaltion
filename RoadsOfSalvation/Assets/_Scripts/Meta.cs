@@ -14,7 +14,7 @@ public class Meta : MonoBehaviour {
             switch (SceneManager.GetActiveScene().name)
             {
                 case "tutorialScene":
-                    PlayerPrefs.SetInt("tutorialCompleted", 0);
+                    PlayerPrefs.SetInt("tutorialCompleted", 1);
                     break;
                 case "GodPath_1":
                     if (PlayerPrefs.GetInt("currentGoodLvl", 0) < 2)

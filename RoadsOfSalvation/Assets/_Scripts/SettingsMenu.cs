@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 using System.IO;
 using System.Xml;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour {
 
@@ -13,6 +14,22 @@ public class SettingsMenu : MonoBehaviour {
 	public void setVolume(float volume)
     {
         audioMixer.SetFloat("generalVolume", volume);
+    }
+
+    public void deleteSavedGame()
+    {
+        Debug.Log("All levels locked");
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("mainMenuScene");
+    }
+
+    public void unlockAllLevels()
+    {
+        Debug.Log("All levels unlocked");
+        PlayerPrefs.SetInt("currentGoodLvl", 2);
+        PlayerPrefs.SetInt("currentBadLvl", 2);
+        PlayerPrefs.SetInt("tutorialCompleted", 1);
+        SceneManager.LoadScene("mainMenuScene");
     }
 
     /*

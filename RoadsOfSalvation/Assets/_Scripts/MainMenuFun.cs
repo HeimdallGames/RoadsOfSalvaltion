@@ -14,13 +14,15 @@ public class MainMenuFun : MonoBehaviour {
     void Start () {
         if (StaticData.tutorialCompleted())
         {
-            startButton.onClick.AddListener(delegate {
-                AudioManager.StopAllAudio();
-                SceneManager.LoadScene("tutorialScene"); });
+            startButton.onClick.AddListener(delegate { goToChoosePath(); });
+            
         }
         else
         {
-            startButton.onClick.AddListener(delegate { goToChoosePath(); });
+            startButton.onClick.AddListener(delegate {
+                AudioManager.StopAllAudio();
+                SceneManager.LoadScene("tutorialScene");
+            });
         }
 
         for(int i = 0; i < StaticData.goodLvl(); i++)

@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         AudioManager.instance.Play("MotorVehicle");
-        //PlayerPrefs.DeleteAll();
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
 		posicionInicial = transform.position.x;
