@@ -8864,7 +8864,7 @@ MonoBehaviour:
   sounds:
   - name: MenuTheme
     clip: {fileID: 8300000, guid: d097dc2a2f4f82f41b3beff9ba95184a, type: 3}
-    volume: 0.7
+    volume: 0.183
     volumeVariance: 1
     pitch: 1
     pitchVariance: 0
