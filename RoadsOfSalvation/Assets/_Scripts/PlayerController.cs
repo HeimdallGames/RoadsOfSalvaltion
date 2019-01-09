@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
          * */
 		float avanzado = ((transform.position.x - posicionInicial )/posicionFinal)*8000;
 		puntuacion = Mathf.CeilToInt (avanzado);
-        Debug.Log("Se toca la velocidad: " + rb.velocity.z);
+        //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
     }
 
     private void Update()
