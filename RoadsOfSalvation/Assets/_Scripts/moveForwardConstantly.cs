@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveForwardConstantly : MonoBehaviour {
-    
+
+    private float velocidadProyectil = 40f;
 
     private void Start()
     {
-        GetComponent<Rigidbody>().AddForce(new Vector3(15f, 0, 0), ForceMode.VelocityChange);
+        GetComponent<Rigidbody>().AddForce(new Vector3(velocidadProyectil, 0, 0), ForceMode.VelocityChange);
+        Invoke("Destroy", 4.0f);
     }
 
-    // Update is called once per frame
-    void FixedUpdate () {
-        //Debug.Log(rb.velocity);
-        //Destruir objeto si X distancia más del personaje
+    private void Destroy()
+    {
+        Object.Destroy(gameObject);
     }
 }

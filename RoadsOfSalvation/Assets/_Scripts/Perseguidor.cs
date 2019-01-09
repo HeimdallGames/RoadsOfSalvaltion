@@ -5,8 +5,8 @@ using UnityEngine;
 public class Perseguidor : MonoBehaviour {
 
     public GameObject objectoLanzado;
-    public float frecuenciaLanzamiento = 2;
-    public float inicioLanzamientos = 3;
+    public float frecuenciaLanzamiento = 4;
+    public float inicioLanzamientos = 4;
 
 
 	// Use this for initialization
@@ -16,7 +16,16 @@ public class Perseguidor : MonoBehaviour {
 	
     void Lanzamiento()
     {
-        GameObject obj = Instantiate(objectoLanzado, transform.position, transform.rotation);
+        float distExtraLmao;
+        if (transform.parent.name == "personaje_bueno")
+        {
+            distExtraLmao = 2;
+        }
+        else
+        {
+            distExtraLmao = 1;
+        }
+        GameObject obj = Instantiate(objectoLanzado, new Vector3(transform.position.x, transform.position.y+ distExtraLmao, transform.position.z), transform.rotation);
         obj.tag = "finish";
         obj.AddComponent<moveForwardConstantly>();
     }
