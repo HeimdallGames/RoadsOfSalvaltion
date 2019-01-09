@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4394202481827366}
-  - component: {fileID: 65307303864872952}
+  - component: {fileID: 114018142710289528}
   m_Layer: 0
   m_Name: esquivar-cura
   m_TagString: Untagged
@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1424113573528100}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -138.86958, y: -2.25, z: -3.101972}
+  m_LocalPosition: {x: -49.80627, y: 3.0000014, z: 2.639325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4862988203702066}
@@ -175,13 +175,13 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100002, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100004, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100006, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100008, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100010, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100012, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
+  - {fileID: 2100000, guid: 2c695fea3ed44b242b3d26eb866d758d, type: 2}
+  - {fileID: 2100000, guid: 414ef4756404083408247be57a7b57b9, type: 2}
+  - {fileID: 2100000, guid: 5efa2d375da83824bb17f66ea924b133, type: 2}
+  - {fileID: 2100000, guid: 1e4ae9c5535b00e4c8068fe70ae45c89, type: 2}
+  - {fileID: 2100000, guid: d705c1036a8f6f64996910a0e2af0818, type: 2}
+  - {fileID: 2100000, guid: 99218fc3da9c5d641afe9242aa2bcc0c, type: 2}
+  - {fileID: 2100000, guid: 9cb594301d2e5144d938e695554fe7f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -216,14 +216,14 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100002, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100004, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100014, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100008, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100010, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100006, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
-  - {fileID: 2100012, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
+  - {fileID: 2100000, guid: 2c695fea3ed44b242b3d26eb866d758d, type: 2}
+  - {fileID: 2100000, guid: 414ef4756404083408247be57a7b57b9, type: 2}
+  - {fileID: 2100000, guid: 5efa2d375da83824bb17f66ea924b133, type: 2}
+  - {fileID: 2100000, guid: 8403ee373c5359442a330f479743c790, type: 2}
+  - {fileID: 2100000, guid: d705c1036a8f6f64996910a0e2af0818, type: 2}
+  - {fileID: 2100000, guid: 99218fc3da9c5d641afe9242aa2bcc0c, type: 2}
+  - {fileID: 2100000, guid: 1e4ae9c5535b00e4c8068fe70ae45c89, type: 2}
+  - {fileID: 2100000, guid: 9cb594301d2e5144d938e695554fe7f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,15 +257,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1542761693160686}
   m_Mesh: {fileID: 4300000, guid: b93e0c00bcfa34944b4908bec56f4983, type: 3}
---- !u!65 &65307303864872952
-BoxCollider:
+--- !u!114 &114018142710289528
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1424113573528100}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5267029, y: 1.6443594, z: 1.4125195}
-  m_Center: {x: -0.26293945, y: 0.8176507, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c3947b09fc1424f8a56329fe10f1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectoLanzado: {fileID: 1886148123497376, guid: 61bb824ca6ee24e4eba874a6ea4e3d5d,
+    type: 2}
+  frecuenciaLanzamiento: 2
+  inicioLanzamientos: 3
