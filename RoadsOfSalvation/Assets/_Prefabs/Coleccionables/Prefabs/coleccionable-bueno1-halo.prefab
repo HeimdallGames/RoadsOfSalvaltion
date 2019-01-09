@@ -37,7 +37,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4909553173624042}
   - component: {fileID: 64798173844977534}
+  - component: {fileID: 135447362733089246}
   - component: {fileID: 114704973556961012}
+  - component: {fileID: 54360518421371348}
   m_Layer: 0
   m_Name: coleccionable-bueno1-halo
   m_TagString: puntos
@@ -115,6 +117,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1215335749804170}
   m_Mesh: {fileID: 4300000, guid: 539dcad5d58009f40b21328458721653, type: 3}
+--- !u!54 &54360518421371348
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886148123497376}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 12
+  m_CollisionDetection: 0
 --- !u!64 &64798173844977534
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -123,7 +140,7 @@ MeshCollider:
   m_GameObject: {fileID: 1886148123497376}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -140,3 +157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b28a78dda1469045b36d875a5c57a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135447362733089246
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886148123497376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
