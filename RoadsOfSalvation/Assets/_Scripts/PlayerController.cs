@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private bool isFren=false;
     void Start()
     {
-        //AudioManager.instance.Play("MotorVehicle");
+        AudioManager.instance.Play("MotorVehicle");
         //PlayerPrefs.DeleteAll();
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
@@ -102,33 +102,27 @@ public class PlayerController : MonoBehaviour
          * */
 		float avanzado = Mathf.Abs(((transform.position.x - posicionInicial )/distTotal))*8000;
 		puntuacion = Mathf.CeilToInt (avanzado);
-        //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(upKey))
         {
-            // AudioManager.instance.Play("DeslizamientoLateral1");
 
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
             }
-            //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, velLateral);
-           // Debug.Log("Velocidad modificada: " + rb.velocity.z);
         }
         else if (Input.GetKeyDown(downKey))
         {
-            //   AudioManager.instance.Play("DeslizamientoLateral2");
+            AudioManager.instance.Play("DeslizamientoLateral2");
             if (transform.position.z > InitialPosHorizontal)
             {
                 goingToCentral = true;
             }
-            //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
-            //Debug.Log("Velocidad modificada: " + rb.velocity.z);
         }
 
         //Necesario para el control táctil
@@ -166,11 +160,10 @@ public class PlayerController : MonoBehaviour
 
     private void nextLevel()
     {
-        if (SceneManager.GetActiveScene().name.Equals("tutorialScene")) { 
-             StaticData.punctuation = puntuacion;
-             StaticData.lastScenario = SceneManager.GetActiveScene().name;
-             SceneManager.LoadScene("nextLevel");
-        }
+        StaticData.punctuation = puntuacion;
+        StaticData.lastScenario = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("nextLevelScene");
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -186,7 +179,7 @@ public class PlayerController : MonoBehaviour
                 AudioManager.instance.Play("Coleccionable");
                 break;
             case "goal":
-				if (transform.position.x == posicionFinal)
+				if (transform.position.x >= posicionFinal)
 				{
 					int bonus = 500;
 					if (Time.time < 100) {
@@ -198,6 +191,7 @@ public class PlayerController : MonoBehaviour
 					}
 					puntuacion += bonus;
 				}
+                Debug.Log("NEXT LEVEL");
                 nextLevel();
                 break;
             default:

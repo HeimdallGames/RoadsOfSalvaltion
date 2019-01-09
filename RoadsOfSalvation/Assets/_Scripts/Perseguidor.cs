@@ -11,6 +11,7 @@ public class Perseguidor : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        AudioManager.instance.Play("AparecePerseguidor");
         InvokeRepeating("Lanzamiento", inicioLanzamientos, frecuenciaLanzamiento);
 	}
 	
@@ -25,6 +26,7 @@ public class Perseguidor : MonoBehaviour {
         {
             distExtraLmao = 1;
         }
+        AudioManager.instance.Play("LanzamientoPerseguidor");
         GameObject obj = Instantiate(objectoLanzado, new Vector3(transform.position.x, transform.position.y+ distExtraLmao, transform.position.z), transform.rotation);
         obj.tag = "finish";
         obj.AddComponent<moveForwardConstantly>();
