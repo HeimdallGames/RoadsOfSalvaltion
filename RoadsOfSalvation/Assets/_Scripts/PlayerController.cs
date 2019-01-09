@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(upKey))
         {
-
+            AudioManager.instance.Play("DeslizamientoLateral1");
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
@@ -152,18 +152,19 @@ public class PlayerController : MonoBehaviour
     //Cuando el personaje muere
     private void death()
     {
+        AudioManager.StopAllAudio();
+        AudioManager.instance.Play("Atropello3");
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().name;
-        AudioManager.StopAllAudio();
         SceneManager.LoadScene("gameOverScene");
     }
 
     private void nextLevel()
     {
+        AudioManager.StopAllAudio();
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("nextLevelScene");
-        
     }
     private void OnTriggerEnter(Collider other)
     {
