@@ -88,14 +88,12 @@ Cuando el juego se inicie, se mostrará un menú con una estética tipo cartoon 
 
 Si el jugador elige la opción de “Jugar”, se dará paso a un nivel 0 que actuará como  tutorial.  Allí,  el  jugador  aprenderá  las  mecánicas  básicas,  cómo manejar el vehículo que controla, cómo conseguir puntos o cómo superar los obstáculos. La estética de este nivel es plana, sin adornos ni sprites, sólo un circuito de color cartón y un personaje subido encima de un aerodeslizador. Si ya se ha jugado previamente el tutorial, este se podrá saltar.
 
-Una vez finalizado el tutorial, se mostrará una pantalla donde se le dará al jugadorla opción de elegir una de las dos modalidades de juego. Si el usuario elige el camino de “Dios”, comenzará el nivel 1 de este camino. Este nivel tendrá una temática agradable y familiar donde el usuario está circulando por una ciudad. El avatar del jugador pasará a ser un joven niño bueno con un halo en la cabeza ,subido en un aerodeslizador con motivos cristianos. El terreno por el que circulará  será  similar  al  del  tutorial,  pero  con  diferentes  obstáculos.  El jugador deberá superar el nivel esquivando  a las señoras mayores a la  vez que va cogiendo objetos coleccionables para conseguir puntos extra.
+Una vez finalizado el tutorial, se mostrará una pantalla donde se le dará al jugadorla opción de elegir una de las dos modalidades de juego. Si el usuario elige el camino de “Dios”, comenzará el nivel 1 de este camino. Este nivel tendrá una temática agradable y familiar donde el usuario está circulando por una ciudad. El avatar del jugador pasará a ser un joven niño bueno con un halo en la cabeza ,subido en un aerodeslizador con motivos cristianos. El terreno por el que circulará  será  similar  al  del  tutorial,  pero  con  diferentes  obstáculos. 
 
 Cuando se supere el segundo nivel, el usuario pasará al nivel 2, donde  las mecánicas  serán  iguales,pero  con  una  diferencia:  en  este  nivel, el  usuario deberá continuar superando obstáculos y consiguiendo objetos mientras es perseguido por un ser que le lanza objetos. 
 
 Si el jugador supera este nivel, saldrá una pantalla de victoria  y volverá al menú principal.
 Si  el  jugador  ahora  elige el  camino  de  Satán,  se  cambiarán  la  estética  y levemente  las  mecánicas  respecto  al  camino  contrario.  En  este  caso,  el escenario  es  una  ciudad  en  llamas, con  un  filtro  rojizo  que  tiñe  todo  el escenario. El avatar del usuario será un niño con cuernos subido ahora en un aerodeslizador con motivos satinicos. 
-
-El  jugador  deberá  ahora  superar  los  obstáculos  mientras  atropella  señoras mayores.
 
 Cuando el jugador haya acabado los dos niveles, habrá completado el juego entero, pero podrá volver a jugarlos las veces que quiera para conseguir una mayor puntuación en los niveles.
 
