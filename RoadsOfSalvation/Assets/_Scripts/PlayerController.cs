@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private Text puntos;
     private int puntuacion; //Almacena la puntuación
+    private int puntosExtra;
 	private float posicionInicial;
 	private float posicionFinal;
 	private float distTotal;
@@ -106,7 +107,7 @@ public class PlayerController : MonoBehaviour
          * Problema de los muros resuelto por ahora haciendo el collider mas grande
          * 
          * */
-		float avanzado = Mathf.Abs(((transform.position.x - posicionInicial )/distTotal))*8000;
+		float avanzado = puntosExtra + Mathf.Abs(((transform.position.x - posicionInicial )/distTotal))*8000;
 		puntuacion = Mathf.CeilToInt (avanzado);
     }
 
@@ -186,12 +187,12 @@ public class PlayerController : MonoBehaviour
                 break;
             case "puntos":
                 Destroy(other.gameObject);
-                puntuacion += 30;
+                puntosExtra += 300;
                 AudioManager.instance.Play("Coleccionable");
                 break;
             case "vieja":
                 Destroy(other.gameObject);
-                puntuacion += 30;
+                puntosExtra += 300;
                 AudioManager.instance.Play("Atropello1");
                 break;
             case "goal":
