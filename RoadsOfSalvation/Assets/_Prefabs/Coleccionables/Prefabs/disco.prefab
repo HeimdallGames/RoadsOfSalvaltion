@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23407466652955086}
   m_Layer: 0
   m_Name: Mesh1
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4079842414412472}
   - component: {fileID: 64530106402606524}
   - component: {fileID: 114063264953008648}
+  - component: {fileID: 135244293635592836}
   m_Layer: 0
   m_Name: disco
   m_TagString: puntos
@@ -51,8 +52,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121790359256616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -64.906, y: 8.9081, z: 3.8606}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 446.20587, y: 206.86736, z: -577.90173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4610451077129652}
@@ -125,7 +126,7 @@ MeshCollider:
   m_GameObject: {fileID: 1121790359256616}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -142,3 +143,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b28a78dda1469045b36d875a5c57a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135244293635592836
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121790359256616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -0.27, z: -0.95}

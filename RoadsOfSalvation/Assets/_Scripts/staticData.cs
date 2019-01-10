@@ -8,9 +8,10 @@ public static class StaticData
     //Liada para poder mantener los botones
     public static bool isAcel = false;
     public static bool isFren = false;
+
     public static bool tutorialCompleted()
     {
-        return PlayerPrefs.GetInt("tutorialCompleted", 1) == 1;
+        return PlayerPrefs.GetInt("tutorialCompleted", 0) == 1;
     }
 
     public static int goodLvl()

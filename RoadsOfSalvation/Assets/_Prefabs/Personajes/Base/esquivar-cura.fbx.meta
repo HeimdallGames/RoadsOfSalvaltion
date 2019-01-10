@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b93e0c00bcfa34944b4908bec56f4983
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Component_1_1
     100002: Component_1_2
@@ -27,7 +27,47 @@ ModelImporter:
     3300002: Mesh2
     4300000: Mesh1
     4300002: Mesh2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_M07
+    second: {fileID: 2100000, guid: 2c695fea3ed44b242b3d26eb866d758d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_M09
+    second: {fileID: 2100000, guid: 1e4ae9c5535b00e4c8068fe70ae45c89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: almostMauve
+    second: {fileID: 2100000, guid: 5efa2d375da83824bb17f66ea924b133, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cherryTomato
+    second: {fileID: 2100000, guid: d705c1036a8f6f64996910a0e2af0818, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emperador
+    second: {fileID: 2100000, guid: 8403ee373c5359442a330f479743c790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: littleBoyBlue
+    second: {fileID: 2100000, guid: 99218fc3da9c5d641afe9242aa2bcc0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 414ef4756404083408247be57a7b57b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yellow
+    second: {fileID: 2100000, guid: 9cb594301d2e5144d938e695554fe7f0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -78,6 +118,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -97,7 +139,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

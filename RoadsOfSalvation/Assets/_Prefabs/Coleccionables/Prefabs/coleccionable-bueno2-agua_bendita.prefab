@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23136979898402260}
   m_Layer: 0
   m_Name: Mesh1
-  m_TagString: Untagged
+  m_TagString: puntos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4177991115741582}
   - component: {fileID: 64216349879690392}
   - component: {fileID: 114176722260025210}
+  - component: {fileID: 135507993854154370}
   m_Layer: 0
   m_Name: coleccionable-bueno2-agua_bendita
   m_TagString: puntos
@@ -51,8 +52,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458903900762410}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -66.31782, y: 8.300001, z: 2.1404064}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -67.51689, y: 4.7291927, z: -2.3550012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4732203109434764}
@@ -127,7 +128,7 @@ MeshCollider:
   m_GameObject: {fileID: 1458903900762410}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -144,3 +145,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b28a78dda1469045b36d875a5c57a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &135507993854154370
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1458903900762410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.46, z: -0.12}

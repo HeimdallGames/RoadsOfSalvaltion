@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private int puntuacion; //Almacena la puntuación
 	private float posicionInicial;
 	private float posicionFinal;
+	private float distTotal;
 
     private float lastZ;
     private float lastCarril;
@@ -33,12 +34,12 @@ public class PlayerController : MonoBehaviour
     private bool isFren=false;
     void Start()
     {
-        //AudioManager.instance.Play("MotorVehicle");
-        //PlayerPrefs.DeleteAll();
+        AudioManager.instance.Play("MotorVehicle");
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
 		posicionInicial = transform.position.x;
 		posicionFinal = meta.transform.position.x;
+		distTotal = Mathf.Abs (posicionFinal - posicionInicial);
         puntos = GameObject.Find("puntosN").GetComponent<Text>(); //Para recoger el texto y poder cambiarlo
         
     }
@@ -98,35 +99,29 @@ public class PlayerController : MonoBehaviour
          * Problema de los muros resuelto por ahora haciendo el collider mas grande
          * 
          * */
-		float avanzado = ((transform.position.x - posicionInicial )/posicionFinal)*8000;
+		float avanzado = Mathf.Abs(((transform.position.x - posicionInicial )/distTotal))*8000;
 		puntuacion = Mathf.CeilToInt (avanzado);
-        //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(upKey))
         {
-            // AudioManager.instance.Play("DeslizamientoLateral1");
-
+            AudioManager.instance.Play("DeslizamientoLateral1");
             if (transform.position.z < InitialPosHorizontal)
             {
                 goingToCentral = true;
             }
-            //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, velLateral);
-           // Debug.Log("Velocidad modificada: " + rb.velocity.z);
         }
         else if (Input.GetKeyDown(downKey))
         {
-            //   AudioManager.instance.Play("DeslizamientoLateral2");
+            AudioManager.instance.Play("DeslizamientoLateral2");
             if (transform.position.z > InitialPosHorizontal)
             {
                 goingToCentral = true;
             }
-            //Debug.Log("Se toca la velocidad: " + rb.velocity.z);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
-            //Debug.Log("Velocidad modificada: " + rb.velocity.z);
         }
 
         //Necesario para el control táctil
@@ -156,19 +151,19 @@ public class PlayerController : MonoBehaviour
     //Cuando el personaje muere
     private void death()
     {
+        AudioManager.StopAllAudio();
+        AudioManager.instance.Play("Atropello3");
         StaticData.punctuation = puntuacion;
         StaticData.lastScenario = SceneManager.GetActiveScene().name;
-        AudioManager.StopAllAudio();
         SceneManager.LoadScene("gameOverScene");
     }
 
     private void nextLevel()
     {
-        if (SceneManager.GetActiveScene().name.Equals("tutorialScene")) { 
-             StaticData.punctuation = puntuacion;
-             StaticData.lastScenario = SceneManager.GetActiveScene().name;
-             SceneManager.LoadScene("nextLevel");
-        }
+        AudioManager.StopAllAudio();
+        StaticData.punctuation = puntuacion;
+        StaticData.lastScenario = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("nextLevelScene");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -184,7 +179,7 @@ public class PlayerController : MonoBehaviour
                 AudioManager.instance.Play("Coleccionable");
                 break;
             case "goal":
-				if (transform.position.x == posicionFinal)
+				if (transform.position.x >= posicionFinal)
 				{
 					int bonus = 500;
 					if (Time.time < 100) {
@@ -196,6 +191,7 @@ public class PlayerController : MonoBehaviour
 					}
 					puntuacion += bonus;
 				}
+                Debug.Log("NEXT LEVEL");
                 nextLevel();
                 break;
             default:

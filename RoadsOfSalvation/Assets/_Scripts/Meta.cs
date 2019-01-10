@@ -8,13 +8,13 @@ public class Meta : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(SceneManager.GetActiveScene().name);
         AudioManager.StopAllAudio();
-        AudioManager.instance.Play("VictoryTheme");
         if (other.tag == "Player") { 
             switch (SceneManager.GetActiveScene().name)
             {
                 case "tutorialScene":
-                    PlayerPrefs.SetInt("tutorialCompleted", 0);
+                    PlayerPrefs.SetInt("tutorialCompleted", 1);
                     break;
                 case "GodPath_1":
                     if (PlayerPrefs.GetInt("currentGoodLvl", 0) < 2)
