@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private bool goingToCentral = false;
 
     private Rigidbody rb;
+    private Animator anim;
     private Text puntos;
     private int puntuacion; //Almacena la puntuación
 	private float posicionInicial;
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
     private bool isFren=false;
     void Start()
     {
+        anim = transform.GetChild(0).GetComponent<Animator>();
         AudioManager.instance.Play("MotorVehicle");
         InitialPosHorizontal = (float) System.Math.Round(transform.position.z, 2); 
         rb = GetComponent<Rigidbody>();
@@ -55,6 +57,8 @@ public class PlayerController : MonoBehaviour
         isAcel = StaticData.isAcel;
         isFren = StaticData.isFren;
         Vector3 velocity = Vector3.zero;
+
+        anim.SetFloat("Horizontal", moveHorizontal);
 
         //Si la velocidad ya es maxima, ignora el input positivo
         if ((moveHorizontal > 0 && rb.velocity.x <= velMax) || isAcel)
