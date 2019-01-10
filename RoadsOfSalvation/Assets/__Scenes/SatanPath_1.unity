@@ -374,7 +374,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -602,7 +602,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -890,7 +890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -1277,7 +1277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -1358,7 +1358,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -2119,7 +2119,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -3312,7 +3312,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -3505,7 +3505,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -3632,7 +3632,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -3713,7 +3713,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -3799,7 +3799,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -3863,7 +3863,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -4134,7 +4134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 9315d2e525211094bbe35abaa2ca5920, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     - target: {fileID: 64591465014924568, guid: 9315d2e525211094bbe35abaa2ca5920,
         type: 2}
@@ -5598,7 +5598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -5857,7 +5857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 9315d2e525211094bbe35abaa2ca5920, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     - target: {fileID: 64591465014924568, guid: 9315d2e525211094bbe35abaa2ca5920,
         type: 2}
@@ -6399,7 +6399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -6775,7 +6775,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -7158,7 +7158,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -7549,7 +7549,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -7671,7 +7671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
@@ -7752,7 +7752,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1862203055247390, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
       propertyPath: m_TagString
-      value: puntos
+      value: vieja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65562100083937430, guid: 459c6099c71d4f841bb1b10081c7dbb8, type: 2}
