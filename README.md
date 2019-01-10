@@ -1,4 +1,10 @@
 # Roads of Salvation - GDD
+**GitHub con el codigo**: [https://github.com/HeimdallGames/RoadsOfSalvaltion](https://github.com/HeimdallGames/RoadsOfSalvaltion)
+
+**Portafolio**: [https://heimdallgames.github.io/](https://heimdallgames.github.io/)
+
+**Intant games de facebook**: [https://www.facebook.com/instantgames/369053920324898/](https://www.facebook.com/instantgames/369053920324898/)
+
 ## Introducción
 
 Este  es  el  documento  de  diseño  del  videojuego “*Roads  Of  Salvation*”, diseñado  para  navegadores  web  en  dispositivos  móviles,  ordenadores  y tablets.  El  juego  se  desarrollará  con  *Unity*,  usando  herramientas  externas como *Blender*, *SketchUp* y *3Ds Max*. En este documento se detallarán todos los conceptos clave relacionados con el juego, como las mecánicas, el arte, los personajes, los escenarios y toda la jugabilidad
