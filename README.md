@@ -197,9 +197,6 @@ Lista y descripción de los componentes.
 * **Name Input**: El jugador usará este input para introducir sus iniciales.
 * **Botón flecha**: Sirve para volver al menú principal.
 
-## Nivel
-En este apartado se mostrará una aproximación a lo que serán los escenarios finales del videojuego. Lo que se enseña son bocetos de una idea básica del escenario   de   juego   para   que,   posteriormente,   se   puedan   desarrollar completamente
-
 ## Arte
 El  videojuego  de *Roads  Of  Salvation* tendrá  una  estética  cartoon  en  tres dimensiones, con influencias como *Pokémon Quest* o *Cross the Road*. Los personajes tendrán una apariencia    geométrica y cómica, con cuerpos exagerados y desproporcionados.
 
@@ -295,7 +292,7 @@ Se  deberán  crear diferentes elementos que actúen como decoracion del escenar
   
 *Figura 28: Ejemplo de partida en escenario malo.*
 
-## Sonidoy Música 
+## Sonido y Música 
 Para  el  videojuego  de *Roads  of  Salvation* se  necesitarán  los  siguientes sonidos y elementos musicales.
 * Sonido cuando se consigue un objeto coleccionable del mapa.
 * Sonido que realiza el vehículo al estar volando.
