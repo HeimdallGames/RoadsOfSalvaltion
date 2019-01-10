@@ -55,10 +55,12 @@ public class pauseController : MonoBehaviour {
     //Reinicia el nivel actual
     public void reset()
     {
+        AudioManager.StopAllAudio();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     //Vuelve al menu principal
     public void exit() {
+        AudioManager.StopAllAudio();
         SceneManager.LoadScene("mainMenuScene");
     }
 }
