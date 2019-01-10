@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: db97699249addd942846792d701dae95
   - enabled: 1
     path: Assets/__Scenes/SatanPath_2.unity
-    guid: a353a1a6ecc3b214fb89583135395323
+    guid: 969d8e0dc81a81b49aebcb4ea6a42b8c
   - enabled: 1
     path: Assets/__Scenes/nextLevelScene.unity
     guid: 77b4e5c6a01d045499370eddbf21114b
