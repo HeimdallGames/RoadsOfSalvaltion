@@ -3200,7 +3200,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3209,9 +3209,10 @@ MonoBehaviour:
   m_Text: "Este videojuego ha sido dise\xF1ado por Heimdall Games (https://heimdallgames.github.io/hello-world/),
     un grupo de alumnos de la Universidad Rey Juan Carlos como parte de la asignatura
     de Juegos para web y redes sociales del grado de dise\xF1o y desarrolo de videojuegos.\r\n<size=35>Equipo:</size>\r\n<b>Iago
-    Calvo Lista</b>: Arte 2D/Modelador 3D.\r\n<b>Iago Cruz Garcia</b>: Desarollador.\r\n<b>Angel
-    Cabanilles Gomar</b>: Desarollador.\r\n<b>Javier Martinez Pablo</b>: Game Designer/Modelado
-    3D/ Dise\xF1o de niveles.\r\n<b>German Matilla Jimenez</b>: Modelado 3D/Desarollador.\r\n"
+    Calvo Lista</b>: Arte 2D/Modelado 3D.\r\n<b>Iago Cruz Garcia</b>: Desarollo.\r\n<b>Angel
+    Cabanilles Gomar</b>: Desarollo/Arte 2D.\r\n<b>Javier Martinez Pablo</b>: Game
+    Design/Modelado 3D/ Dise\xF1o de niveles.\r\n<b>German Matilla Jimenez</b>: Modelado
+    3D/Desarollo.\r\n"
 --- !u!222 &661897525
 CanvasRenderer:
   m_ObjectHideFlags: 0
