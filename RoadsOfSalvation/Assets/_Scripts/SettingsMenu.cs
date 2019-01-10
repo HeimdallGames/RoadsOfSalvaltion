@@ -13,6 +13,10 @@ public class SettingsMenu : MonoBehaviour {
 
 	public void setVolume(float volume)
     {
+        if (volume <= -29)
+        {
+            volume = -80;
+        }
         audioMixer.SetFloat("generalVolume", volume);
     }
 
