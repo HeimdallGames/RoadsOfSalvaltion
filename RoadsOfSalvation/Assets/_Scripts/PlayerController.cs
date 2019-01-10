@@ -178,6 +178,12 @@ public class PlayerController : MonoBehaviour
                 puntuacion += 30;
                 AudioManager.instance.Play("Coleccionable");
                 break;
+            case "viejas":
+                Destroy(other.gameObject);
+                puntuacion += 30;
+                AudioManager.instance.Play("Coleccionable");
+                break;
+                break;
             case "goal":
 				if (transform.position.x >= posicionFinal)
 				{

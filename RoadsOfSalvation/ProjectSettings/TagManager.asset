@@ -8,6 +8,7 @@ TagManager:
   - puntos
   - pausa
   - goal
+  - vieja
   layers:
   - Default
   - TransparentFX
