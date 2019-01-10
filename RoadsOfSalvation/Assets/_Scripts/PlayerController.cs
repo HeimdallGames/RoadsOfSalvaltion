@@ -181,8 +181,7 @@ public class PlayerController : MonoBehaviour
             case "viejas":
                 Destroy(other.gameObject);
                 puntuacion += 30;
-                AudioManager.instance.Play("Coleccionable");
-                break;
+                AudioManager.instance.Play("Atropello1");
                 break;
             case "goal":
 				if (transform.position.x >= posicionFinal)
