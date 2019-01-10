@@ -13,6 +13,7 @@ public class ancianaSatanPath_moves : MonoBehaviour {
     private string escena;
     void Start()
     {
+        AudioManager.instance.Play("Vieja");
         escena = SceneManager.GetActiveScene().name;
         start = transform.localPosition;
         nueva = transform.localPosition;

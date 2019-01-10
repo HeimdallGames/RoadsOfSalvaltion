@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1842449687047192}
+  m_IsPrefabAsset: 1
+--- !u!1 &1842449687047192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4422928671532030}
+  - component: {fileID: 114921196196178486}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4422928671532030
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842449687047192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114921196196178486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842449687047192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98109716c4e5ee74e8fb17b82aac9657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+  sounds:
+  - name: MenuTheme
+    clip: {fileID: 8300000, guid: d097dc2a2f4f82f41b3beff9ba95184a, type: 3}
+    volume: 0.183
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: GoodTheme
+    clip: {fileID: 8300000, guid: c00805c87c732304a998320e58b6131a, type: 3}
+    volume: 0.7
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: BadTheme
+    clip: {fileID: 8300000, guid: 1760af1923b9f214091b2c4b711b6bc2, type: 3}
+    volume: 0.5
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: GameOverTheme
+    clip: {fileID: 8300000, guid: 90664ff0a0d0d884e9532e3201e5d88b, type: 3}
+    volume: 0.6
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: VictoryTheme
+    clip: {fileID: 8300000, guid: 5ae6736847a78674aa4d7e7f7304ec6f, type: 3}
+    volume: 0.7
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: ButtonClick
+    clip: {fileID: 8300000, guid: 48ca3c94dcfda404db960b33a1b48375, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: MotorVehicle
+    clip: {fileID: 8300000, guid: ad7e7c51da4667f4bb7375ff3eb11dab, type: 3}
+    volume: 0.5
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: DeslizamientoLateral1
+    clip: {fileID: 8300000, guid: 212461dfdc974b944b21198028192140, type: 3}
+    volume: 0.5
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: DeslizamientoLateral2
+    clip: {fileID: 8300000, guid: 212461dfdc974b944b21198028192140, type: 3}
+    volume: 0.5
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: Atropello1
+    clip: {fileID: 8300000, guid: e27245e097816494d87b62219d87ee8b, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: Atropello2
+    clip: {fileID: 8300000, guid: 0d712c6632e0d8c4e94ef87788e9437c, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: Coleccionable
+    clip: {fileID: 8300000, guid: 1ed964937e92cbe44bf2729dac1c00be, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: StartRacing
+    clip: {fileID: 8300000, guid: e7cabab9dc521d6438e3189e44505f40, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: NewRecord
+    clip: {fileID: 8300000, guid: e79f844f1f53b41418df7f81d4ae2da8, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: Vieja
+    clip: {fileID: 8300000, guid: 98b26c188ebf85a4dbf962231ea7c765, type: 3}
+    volume: 0.3
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: AparecePerseguidor
+    clip: {fileID: 8300000, guid: 173986f313d5f8f41ba81b59e04003df, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: LanzamientoPerseguidor
+    clip: {fileID: 8300000, guid: bdcdef2393241ba4284f632e5b3d2466, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: Atropello3
+    clip: {fileID: 8300000, guid: 66640386e0e31b442a3c72e7f3c93ac7, type: 3}
+    volume: 1
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: GoodTheme2
+    clip: {fileID: 8300000, guid: ca7937e74967684429631c7f26759fad, type: 3}
+    volume: 0.7
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
+  - name: BadTheme2
+    clip: {fileID: 8300000, guid: 7047100da2fddd241b5e68ada44b895d, type: 3}
+    volume: 0.5
+    volumeVariance: 1
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 24300002, guid: cb62eb35b2a791c499c0f91d172dc76a, type: 2}
+    source: {fileID: 0}
