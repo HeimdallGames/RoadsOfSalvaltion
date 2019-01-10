@@ -89,6 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4703086451347060}
+  - component: {fileID: 95750012649674738}
   m_Layer: 0
   m_Name: personaje-bueno
   m_TagString: Untagged
@@ -375,6 +376,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0060091, y: 0.86592865, z: 1}
   m_Center: {x: 0.0030044843, y: 0.06703569, z: 0}
+--- !u!95 &95750012649674738
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1800541342119160}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5e597ef977fe1841a1c9e95fd405170, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114785064817691200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -386,12 +405,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da438b18e0133194da95b78dc2db95ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acel: 100
   velMin: 10
   velMax: 30
   velLateral: 15
   upKey: w
   downKey: s
+  meta: {fileID: 0}
   InitialPosHorizontal: 0
 --- !u!135 &135326258866318440
 SphereCollider:

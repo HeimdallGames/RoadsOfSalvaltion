@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         isAcel = StaticData.isAcel;
         isFren = StaticData.isFren;
         Vector3 velocity = Vector3.zero;
-
+        
         anim.SetFloat("Horizontal", moveHorizontal);
 
         //Si la velocidad ya es maxima, ignora el input positivo
@@ -82,18 +82,21 @@ public class PlayerController : MonoBehaviour
             goingToCentral = false;
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
+            anim.SetFloat("Vertical", 0);
         }
         //Medio arriba
         else if (transform.position.z > InitialPosHorizontal + 2.6f)
         {
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal + 2.5f);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
+            anim.SetFloat("Vertical", 0);
         }
         //Medio abajo
         else if (transform.position.z < InitialPosHorizontal - 2.6f)
         {
             rb.position = new Vector3(rb.position.x, rb.position.y, InitialPosHorizontal - 2.5f);
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0.0f);
+            anim.SetFloat("Vertical", 0);
         }
         /**************************************************************/
         /**************************************************************/
@@ -117,6 +120,7 @@ public class PlayerController : MonoBehaviour
                 goingToCentral = true;
             }
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, velLateral);
+            anim.SetFloat("Vertical", 1);
         }
         else if (Input.GetKeyDown(downKey))
         {
@@ -126,6 +130,7 @@ public class PlayerController : MonoBehaviour
                 goingToCentral = true;
             }
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
+            anim.SetFloat("Vertical", -1);
         }
 
         //Necesario para el control táctil
@@ -139,6 +144,7 @@ public class PlayerController : MonoBehaviour
                     goingToCentral = true;
                 }
                 rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, velLateral);
+                anim.SetFloat("Vertical", 1);
             }
             else if (desplazamiento.y < 1) {
                 AudioManager.instance.Play("DeslizamientoLateral2");
@@ -147,6 +153,7 @@ public class PlayerController : MonoBehaviour
                     goingToCentral = true;
                 }
                 rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -velLateral);
+                anim.SetFloat("Vertical", -1);
             }
         }
         puntos.text = "" + puntuacion;
