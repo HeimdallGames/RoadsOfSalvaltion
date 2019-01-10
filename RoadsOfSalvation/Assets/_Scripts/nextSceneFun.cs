@@ -34,13 +34,10 @@ public class nextSceneFun : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     //Cargar la escena siguiente dependiendo de si el mapa fue bueno o malo
     private void nextLevel() {
+        AudioManager.StopAllAudio();
         if (lastScene.Equals("GodPath_1"))
         {
             SceneManager.LoadScene("GodPath_2");
@@ -53,20 +50,24 @@ public class nextSceneFun : MonoBehaviour {
     private void goodLevel() {
         //Cargar escena de bueno
         SceneManager.LoadScene("GodPath_1");
+        AudioManager.StopAllAudio();
     }
 
     private void badLevel() {
         //Cargar escena del malo
         SceneManager.LoadScene("SatanPath_1");
+        AudioManager.StopAllAudio();
     }
 
     private void restart() {
         //Reinicia el ultimo nivel jugado
         SceneManager.LoadScene(lastScene);
+        AudioManager.StopAllAudio();
     }
 
     private void quit() {
         //Sale al menu
         SceneManager.LoadScene("mainMenuScene");
+        AudioManager.StopAllAudio();
     }
 }
