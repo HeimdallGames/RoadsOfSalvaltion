@@ -178,7 +178,7 @@ public class PlayerController : MonoBehaviour
                 puntuacion += 30;
                 AudioManager.instance.Play("Coleccionable");
                 break;
-            case "viejas":
+            case "vieja":
                 Destroy(other.gameObject);
                 puntuacion += 30;
                 AudioManager.instance.Play("Atropello1");
