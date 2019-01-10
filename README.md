@@ -107,7 +107,7 @@ En esta sección se detallarán todos los objetos que aparecerán en una pantall
 ### Protagonista
 El  personaje  que  manejará  el  usuario  estará  representado con  3  avatares distintos:
 * Durante el **tutorial**, la apariencia del personaje será de un niño estándar subido en un aerodeslizador.
-* En el **camino de Dios**, el niño tendrá un halo en la cabeza y alas de angel, vestido con una tunica y con un aerodeslizador decorado con cruces cristianas.
+* En el **camino de Dios**, el niño tendrá un halo en la cabeza y alas de angel, vestido con una túnica y con un aerodeslizador decorado con cruces cristianas.
 * En el **camino de Satán**, será un niño con cuernos y una capa subido en un aerodeslizador decorado con pentagramas sátanicos.
 
 ### Señoras mayores
@@ -124,7 +124,7 @@ En el juego habrá 3 tipos de escenarios distintos. A pesar de que en general ti
 
 * **Escenario  del  tutorial**:  escenario  sin  assets  ni  fondo,  con  un  color marrón  cartón.  Sirve  para  que  el  jugador  entienda  las  mecánicas básicas del juego y practique.
 * **Escenario  camino  de  Dios**:  los  dos  escenarios  de  los  respectivos niveles de este camino tienen una estética agradable y están situados en una ciudad. 
-* **Escenario  camino  de  Satán**:  en  estos  dos  niveles,  el  escenario  está compuesto  por  una  ciudad  en  llamas,  con  y un  filtro  rojizo  cubrirá  todo  el  mapa.
+* **Escenario  camino  de  Satán**:  en  estos  dos  niveles,  el  escenario  está compuesto  por  una  ciudad  en  llamas con   un  filtro  rojizo que cubrirá  todo  el  mapa.
 ## Interacciones
 En este videojuego, el usuario podrá interactuar con diferentes elementos del escenario.  A  continuación,  se  explicarán  con  detalle  cada  una  de  estas interacciones:
 * **Protagonista-Señora  mayor**:  el  usuario  podrá  esquivar  o  atropellar  a cada una de estas pobres ancianas.
@@ -260,18 +260,18 @@ Se deben crear objetos en tres dimensiones para los objetos coleccionables del j
 
 ![alt text](gdd_images/coleccionable-malo-simbolo.JPG "Figura 19: Coleccionable malo: simbolo satanico.")
   
-*Figura 19: Coleccionable malo: simbolo satanico.*
+*Figura 19: Coleccionable malo: símbolo satánico.*
 
 ![alt text](gdd_images/coleccionable-malo-pentaculo.JPG "Figura 20: Coleccionable malo: pentaculo.")
   
-*Figura 20: Coleccionable malo: pentaculo.*
+*Figura 20: Coleccionable malo: pentáculo.*
 
 ![alt text](gdd_images/coleccionable-malo-disco.JPG "Figura 21: Coleccionable malo: disco.")
   
-*Figura 21: Coleccionable malo: agua bendita.*
+*Figura 21: Coleccionable malo: disco de death metal.*
 
 ### Escenario
-Se  deberán  crear diferentes elementos que actúen como decoracion del escenario, así mismo se deberan crear imagenes 2D que actuen como fondo tiliable de los niveles y como textura de la carretera.
+Se  deberán  crear diferentes elementos que actúen como decoracion del escenario, así mismo se deberan crear imagenes 2D que actúen como fondo tiliable de los niveles y como textura de la carretera.
 
 ![alt text](gdd_images/fondo-carretera.png "Figura 22: Textura de la carretera.")
   
