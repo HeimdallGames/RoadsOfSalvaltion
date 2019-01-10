@@ -13,10 +13,10 @@
 
 ## Introducción
 
-Este  es  el  documento  de  diseño  del  videojuego “*Roads  Of  Salvation*”, diseñado  para  navegadores  web  en  dispositivos  móviles,  ordenadores  y tablets.  El  juego  se  desarrollará  con  *Unity*,  usando  herramientas  externas como *Blender*, *SketchUp* y *3Ds Max*. En este documento se detallarán todos los conceptos clave relacionados con el juego, como las mecánicas, el arte, los personajes, los escenarios y toda la jugabilidad
+Este  es  el  documento  de  diseño  del  videojuego “*Roads  Of  Salvation*”, diseñado  para  navegadores  web  en  dispositivos  móviles,  ordenadores  y tablets.  El  juego  se  desarrollará  con  *Unity*,  usando  herramientas  externas como *Blender*, *SketchUp* y *3Ds Max*. En este documento se detallarán todos los conceptos clave relacionados con el juego, como las mecánicas, el arte, los personajes, los escenarios y toda la jugabilidad.
 
 ## Concepto del juego
-*Roads Of Salvation* es un videojuego 3D de conducciónen el que el jugador podrá elegir entre diferentes caminos, cambiando así las mecánicas del juego y los objetivos. En una primera versión del juego existirán dos caminos: el de Dios y el de Satán. Si se elige el camino de Dios, el jugador se montará en su vehículo y deberá esquivar señoras mayores e ir cogiendo botes de agua  bendita  y  biblias.  Si  por  el  contrario  se  elige el  camino  de  Satán,  el jugador se montará para atropellar a todas las viejas que vea y coger los pentáculos y símbolos satánicos que encuentre. Este  videojuego  es  una  mezcla  de  un  juego  de  conducción  de scroll lateral en 3D con plataformas y elementos arcade.
+*Roads Of Salvation* es un videojuego 3D de conducción en el que el jugador podrá elegir entre diferentes caminos, cambiando así las mecánicas del juego y los objetivos. En una primera versión del juego existirán dos caminos: el de Dios y el de Satán. Si se elige el camino de Dios, el jugador se montará en su vehículo y deberá esquivar señoras mayores e ir cogiendo botes de agua  bendita  y  biblias.  Si  por  el  contrario  se  elige el  camino  de  Satán,  el jugador se montará para atropellar a todas las viejas que vea y coger los pentáculos y símbolos satánicos que encuentre. Este  videojuego  es  una  mezcla  de  un  juego  de  conducción  de scroll lateral en 3D con plataformas y elementos arcade.
 
 ## Características distintivas
 * Dos  formas  de  jugar:  elige  tu  propio  camino  y las  mecánicas cambiarán.
@@ -25,9 +25,9 @@ Este  es  el  documento  de  diseño  del  videojuego “*Roads  Of  Salvation*�
 * Temática cómica y estética cartoon con elementos religiosos.
 
 ## Género
-*Roads Of Salvation* nace de juegos como *Excitebike*, *Uphill* *Rush*, *Zombie Squado*, *Little  Big  Planet* mezclándolo  todo  con  elementos  de  comedia, parodias  religiosas  y  con  la  opción  de  dejarle  al  jugador  elegir  el  tipo  de juego que quiere. Los géneros en los que se basa son:
-* **Deportivo**: en  el  juego  manejas  un  vehículo  a  través  de  diferentes escenarios con temáticas distintasy obstáculos.
-* **Arcade**: hay   diferentes   niveles   de   dificultad,   con   un   nivel introductorio que actúa como tutorial. Después, eljugador podrá elegir el camino que desea.
+*Roads Of Salvation* nace de juegos como *Excitebike*, *Uphill* *Rush*, *Zombie Squado* y *Little  Big  Planet* mezclándolo  todo  con  elementos  de  comedia, parodias  religiosas  y  con  la  opción  de  dejarle  al  jugador  elegir  el  tipo  de juego que quiere. Los géneros en los que se basa son:
+* **Deportivo**: en  el  juego  manejas  un  vehículo  a  través  de  diferentes escenarios con temáticas distintas y obstáculos.
+* **Arcade**: hay   diferentes   niveles   de   dificultad,   con   un   nivel introductorio que actúa como tutorial. Después, el jugador podrá elegir el camino que desea.
 * **Plataformas**: los distintos escenarios obligarán al jugador a moverse entre los diferentes carriles por donde circula el vehículo para superar los desafíos.
   
 ## Propósito y Público Objetivo
@@ -41,8 +41,8 @@ El PEGI de este juego sería de mayores de 16 años.
  ## Mecánicas de juego
  En este apartado se explicará de forma detalla las mecánicas de juego que determinan  a Roads  Of  Salvation. Se  hablará,  de  los  niveles  del  juego,  la jugabilidad,  los  diferentes  objetivos  de  cada  partida,  la  forma  de  jugar  y cómo conseguir puntos.
  ## Jugabilidad
- El juego se dividirá en 5 escenarios distintos. El primer nivel actuará como tutorial para enseñar aljugador las mecánicas básicas del juego. Cuando se acabe este primer nivel, el usuario deberá elegir el camino del mal o del bien.
- * **Movilidad**: el personaje recorreun circuito donde podrá cambiar de carril  según  la  necesidad  del  momento  y  aumentar  y  disminuir  la velocidad.
+ El juego se dividirá en 5 escenarios distintos. El primer nivel actuará como tutorial para enseñar al jugador las mecánicas básicas del juego. Cuando se acabe este primer nivel, el usuario deberá elegir el camino del mal o del bien.
+ * **Movilidad**: el personaje recorre un circuito donde podrá cambiar de carril  según  la  necesidad  del  momento  y  aumentar  y  disminuir  la velocidad.
  * **Obstáculos**   y   objetos: habrá   diferentes   señoras   mayores   que deberemos esquivar o atropellar, además de diferentes objetos detemática religiosa, como Biblias, pentáculos, botellas de agua bendita, cruces invertidas y demás.
 ## Movimientos
 Al tratarse de un juego tipo scroll lateral en tres dimensiones, es necesario mencionar que la cámara estará en una posición de unos -60º respecto al eje horizontal  del  escenario  y  30º  respecto al  eje  vertical,  para  dotar  a  esta  de profundidada  la  vez  que  mantiene  la  esencia  básica  de  los  juegos  de  este tipo.
@@ -66,7 +66,7 @@ Si el usuario ha elegido el camino de  Dios,  el jugador irá montado en una cru
 Los  escenarios  tendrán  una  estructura  similar  en  ambos  caminos,  pero cambiará  la  estética,  los  objetos  en  pantalla,  el  asset  del  jugador  y  habrá variaciones en el terreno, como saltos distintos, zonas elevadas, etc.
 
 ## Dificultad
-Como  se  ha  mencionado,  después  del  nivel  inicial  del  tutorial,  habrá  dos niveles de un camino y dos niveles de otro. En cada nivel habrá obstáculos y elementos que conseguir, pero en el último nivel de cada camino el usuario tendrá que huir de un ser que le perseguirá y le lanzará cosas. En el camino de  Dios, Darwin perseguirá  al  usuario  lanzándole libros  de  ciencia;  en  el camino  de  Satán, un  señor  será  el  perseguidor  y  lanzará  panfletos  de  la iglesia.
+Como  se  ha  mencionado,  después  del  nivel  inicial  del  tutorial,  habrá  dos niveles de un camino y dos niveles de otro. En cada nivel habrá obstáculos y elementos que conseguir, pero en el último nivel de cada camino el usuario tendrá que huir de un ser que le perseguirá y le lanzará cosas. En el camino de  Dios, Darwin perseguirá  al  usuario  lanzándole pentáculos;  en  el camino  de  Satán, un  cura  será  el  perseguidor  y  lanzará  biblias.
 El jugador sólo dispone de una vida por nivel. Si se choca con un objeto o le alcanza  un  elemento  lanzado  por  los  perseguidores,  el  nivel  empezará  de nuevo.
 
 ## Puntuación
@@ -88,16 +88,14 @@ Cuando el juego se inicie, se mostrará un menú con una estética tipo cartoon 
 
 Si el jugador elige la opción de “Jugar”, se dará paso a un nivel 0 que actuará como  tutorial.  Allí,  el  jugador  aprenderá  las  mecánicas  básicas,  cómo manejar el vehículo que controla, cómo conseguir puntos o cómo superar los obstáculos. La estética de este nivel es plana, sin adornos ni sprites, sólo un circuito de color cartón y un personaje subido encima de un aerodeslizador. Si ya se ha jugado previamente el tutorial, este se podrá saltar.
 
-Una vez finalizado el tutorial, se mostrará una pantalla donde se le dará al jugadorla opción de elegir una de las dos modalidades de juego. Si el usuario elige el camino de “Dios”, comenzará el nivel 1 de este camino. Este nivel tendrá una temática agradable y familiar donde el usuario está circulando por una ciudad. El avatar del jugador pasará a ser un joven angel con un halo en la cabeza,subido en un aerodeslizador con motivos cristianos. El terreno por el que circulará  será  similar  al  del  tutorial,  pero  con  diferentes  obstáculos.  El jugador deberá superar el nivel esquivando  a las señoras mayores a la  vez que va cogiendo objetos coleccionables para conseguir puntos extra.
+Una vez finalizado el tutorial, se mostrará una pantalla donde se le dará al jugadorla opción de elegir una de las dos modalidades de juego. Si el usuario elige el camino de “Dios”, comenzará el nivel 1 de este camino. Este nivel tendrá una temática agradable y familiar donde el usuario está circulando por una ciudad. El avatar del jugador pasará a ser un joven niño bueno con un halo en la cabeza ,subido en un aerodeslizador con motivos cristianos. El terreno por el que circulará  será  similar  al  del  tutorial,  pero  con  diferentes  obstáculos.  El jugador deberá superar el nivel esquivando  a las señoras mayores a la  vez que va cogiendo objetos coleccionables para conseguir puntos extra.
 
-Cuando se supere el segundo nivel, el usuario pasará al nivel 2, donde  las mecánicas  serán  iguales,pero  con  una  diferencia:  en  este  nivel, el  usuario deberá continuar superando obstáculos y consiguiendo objetos mientras es perseguido por un ser que le lanza objetos. En el caso del camino de Dios, será Darwin el que lance libros de ciencia al jugador mientras le persigue.
+Cuando se supere el segundo nivel, el usuario pasará al nivel 2, donde  las mecánicas  serán  iguales,pero  con  una  diferencia:  en  este  nivel, el  usuario deberá continuar superando obstáculos y consiguiendo objetos mientras es perseguido por un ser que le lanza objetos. 
 
 Si el jugador supera este nivel, saldrá una pantalla de victoria  y volverá al menú principal.
 Si  el  jugador  ahora  elige el  camino  de  Satán,  se  cambiarán  la  estética  y levemente  las  mecánicas  respecto  al  camino  contrario.  En  este  caso,  el escenario  es  una  ciudad  en  llamas, con  un  filtro  rojizo  que  tiñe  todo  el escenario. El avatar del usuario será un niño con cuernos subido ahora en un aerodeslizador con motivos satinicos. 
 
 El  jugador  deberá  ahora  superar  los  obstáculos  mientras  atropella  señoras mayores.
-
-El segundo del nivel de este camino también tiene un perseguidor. En este caso será un cura que lanza panfletos de la Iglesia Católica.
 
 Cuando el jugador haya acabado los dos niveles, habrá completado el juego entero, pero podrá volver a jugarlos las veces que quiera para conseguir una mayor puntuación en los niveles.
 
@@ -116,7 +114,7 @@ El  personaje  que  manejará  el  usuario  estará  representado con  3  avatar
 Son  los personajes a los que tienes que esquivar o atropellar, dependiendo del camino, en el juego. Su apariencia es de abuelita típica un poco rechoncha con un moño en la cabeza.
 
 ### Perseguidores
-En el último nivel de cada camino el usuario será perseguido por un  NPC que  lanza objetos.  En  el  caso  del  camino  de  Dios,  será  Darwin  lanzando libros  de  ciencia  y  en  el  camino  de  Satán,  será  un  señor  con  traje  tirando panfletos de la Iglesia Católica.
+En el último nivel de cada camino el usuario será perseguido por un  NPC que  lanza objetos.  En  el  caso  del  camino  de  Dios,  será  Darwin y  en  el  camino  de  Satán,  será  un cura.
 
 ### Objetos coleccionables.
 En  todos  los  escenarios,  el  protagonista  deberá  ir  recogiendo  diferentes objetos para conseguir más puntos. Estos objetos serán: Biblias, botellas de agua bendita, halos, pentáculos, símbolos satánicos,  y discos de black metal.
@@ -125,9 +123,8 @@ En  todos  los  escenarios,  el  protagonista  deberá  ir  recogiendo  diferent
 En el juego habrá 3 tipos de escenarios distintos. A pesar de que en general tiene una estructura parecida, difieren en la  estética, los objetos que contienenen y en algunos obstáculos.
 
 * **Escenario  del  tutorial**:  escenario  sin  assets  ni  fondo,  con  un  color marrón  cartón.  Sirve  para  que  el  jugador  entienda  las  mecánicas básicas del juego y practique.
-* **Escenario  camino  de  Dios**:  los  dos  escenarios  de  los  respectivos niveles de este camino tienen una estética agradable y están situados en una ciudad. Aquí el protagonista tiene el avatar de “niño bueno”, elfondo está compuesto por edificios, coches y árboles y los objetos coleccionables serán Biblias, halos y botellas de agua bendita.
-* **Escenario  camino  de  Satán**:  en  estos  dos  niveles,  el  escenario  está compuesto  por  una  ciudad  en  llamas,  con  edificios  destruidos  y árboles  secos.  Un  filtro  rojizo  cubrirá  todo  el  mapa,  el  avatar  del personaje será el del “niño diabolico con cuernos” y los objetos que se podrán recoger serán pentáculo, símbolos satánicos y discos de black metal.
-
+* **Escenario  camino  de  Dios**:  los  dos  escenarios  de  los  respectivos niveles de este camino tienen una estética agradable y están situados en una ciudad. 
+* **Escenario  camino  de  Satán**:  en  estos  dos  niveles,  el  escenario  está compuesto  por  una  ciudad  en  llamas,  con  y un  filtro  rojizo  cubrirá  todo  el  mapa.
 ## Interacciones
 En este videojuego, el usuario podrá interactuar con diferentes elementos del escenario.  A  continuación,  se  explicarán  con  detalle  cada  una  de  estas interacciones:
 * **Protagonista-Señora  mayor**:  el  usuario  podrá  esquivar  o  atropellar  a cada una de estas pobres ancianas.
@@ -310,3 +307,5 @@ Para  el  videojuego  de *Roads  of  Salvation* se  necesitarán  los  siguiente
 * Sonido que se realiza al cambiar de carril.
 * Música de victoria.
 * Música de Game Over.
+
+Todos los sonidos elegidos para *Road Of Salvation* han sido adquiridos en https://player.epidemicsound.com/ , gracias a una suscripción que permite usar todos los sonidos y canciones sin copyright.
